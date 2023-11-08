@@ -1,0 +1,19 @@
+[
+    {
+        "title": [
+            {
+                "value": "hello",
+                "type": "HIGHLIGHT_TITLE"
+            },
+            {
+                "value": "word-sep",
+                "type": "PLAIN_TITLE"
+            },
+            {
+                "value": "RunFlow",
+                "type": "PLAIN_TITLE"
+            }
+        ],
+        "shouldAssignBundle": true
+    }
+]

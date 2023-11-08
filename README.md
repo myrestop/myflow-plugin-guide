@@ -14,7 +14,7 @@ Before the journey of plugin developing, please ensure you read our [RunFlow Use
 
 RunFlow is a powerful efficiency tool, it can extend function by installing plugin, and plugins are not restricted by programming languages, this will bring much more possibilities to our app.
 
-We sincerely invite you to be a plugin developer on our platform, let us build an open, free and efficient productivity tool.
+We sincerely invite you to be a plugin developer on our platform. Let us build this productivity tool together, to make it more open, free and efficiently.
 
 ## Preconditions
 
@@ -24,4 +24,4 @@ We sincerely invite you to be a plugin developer on our platform, let us build a
 
 ## Document In Short
 
-[Get Started](get_started.md) explains how to write a 'Hello RunFlow' plugin, including multi-language support and writing a plugin description page, and we will show you some core necessary fields in the plugin configuration file `plugin-spec.yml`.
+[Getting Started](getting_started.md) explains how to write a 'Hello RunFlow' plugin, including multi-languages support and writing a plugin description page, and we will show you some core necessary fields in the plugin configuration file `plugin-spec.yml`.

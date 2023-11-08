@@ -1,5 +1,2 @@
-- [Welcome](README.md#welcome-to-our-runflow-plugin-guide "RunFlow Plugin Guide")
-    - [Introduction](README.md#introduction "RunFlow Plugin Guide")
-    - [Preconditions](README.md#preconditions "RunFlow Plugin Guide")
-    - [Document In Short](README.md#document-in-short "RunFlow Plugin Guide")
-- [Get Started](get_started.md#get-started "RunFlow Plugin Guide")
+- [Introduction](README.md#welcome-to-our-runflow-plugin-guide "RunFlow Plugin Guide")
+- [Getting Started](getting_started.md#getting-started "RunFlow Plugin Guide")

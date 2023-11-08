@@ -1,0 +1,20 @@
+id: runflow.hello
+name: Hello RunFlow
+names:
+  ZH_CN: 你好RunFlow
+entry: ./hello_runflow.json
+customize-loader: commandline
+version: 1.0.0
+compatible-version:
+  since-build: 0
+  until-build: 2147483647
+categories:
+  - PRODUCTIVITY
+platforms:
+  - WINDOWS
+  - MACOS
+  - LINUX
+actions:
+  - keywords:
+      - hello
+    handler: "{entry}"
