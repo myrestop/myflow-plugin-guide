@@ -49,6 +49,6 @@ When you follow the steps to get here, everything is ready, now we just running 
 
 Then type the `hello` keyword in action input field, you will see the result: `Hello RunFlow`, and if you switch the language to simplified chinese, you will see `你好RunFlow`.
 
-> [The Example Full Code](https://github.com/myrestop/myflow-plugin-guide/hello-runflow)
+> [The Example Full Code](https://github.com/myrestop/myflow-plugin-guide/tree/master/hello-runflow)
 
 ## What's Next
