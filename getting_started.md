@@ -16,9 +16,9 @@ Next, make a new json file to response fixed text, and call it `hello_runflow.js
 
 > Learn more about these fields, see [Action Result](appendix/action_result.md#action-result-fields-explanation).
 
-## Writing Plugin Configuration File
+## Writing Plugin Specification File
 
-In this step, you should create a plugin configuration file that named `plugin-spec.yml` (note: **the configuration file name is fixed, you can't customize it**), then input the following content into it.
+In this step, you should create a plugin specification file that named `plugin-spec.yml` (note: **the configuration file name is fixed, you can't customize it**), then input the following content into it.
 
 [plugin-spec.yml](hello-runflow/plugin-spec.yml ':include :type=code')
 
