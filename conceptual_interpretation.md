@@ -34,6 +34,10 @@ Action Result Callback refers the specific execution method of the result, for e
 
 > [Action Result Callback Fields Explanation](appendix/action_result_callback.md#action-result-callback-fields-explanation)
 
+## Func Page
+
+Func page is your customized ui, it can open as a pinned keyword, if the functions you want to provide require interact with user interface, you need this feature, and this feature only available in [jar plugin](jar-plugin-guide/jar_guide.md#jar-plugin-guide). If you familiar with any JVM programming language, you can read [this section](jar-plugin-guide/func_page.md#func-page) to learn more about how to write a func page.
+
 ## What's Next
 
 [**Follow our tutorial to write a general fully functional plugin**](general-plugin-guide/general_guide.md#general-plugin-guide).
