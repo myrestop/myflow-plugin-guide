@@ -16,9 +16,9 @@ Next, make a new json file to response fixed text, and call it `hello_runflow.js
 
 > Learn more about these fields, see [Action Result](appendix/action_result.md).
 
-## Writing The Plugin Configuration File
+## Writing Plugin Configuration File
 
-In this step, you should create a plugin configuration file that named `plugin-spec.yml` (note: **the configuration file name is fixed, you can't customize it**), then enter the following content into it.
+In this step, you should create a plugin configuration file that named `plugin-spec.yml` (note: **the configuration file name is fixed, you can't customize it**), then input the following content into it.
 
 [plugin-spec.yml](hello-runflow/plugin-spec.yml ':include :type=code')
 
@@ -26,9 +26,9 @@ In this step, you should create a plugin configuration file that named `plugin-s
 
 ## Bundling Language Resource (Optional)
 
-If you want to your plugin to support multi languages, you need bundle the language resource.
+If you want to your plugin to support multi languages, you need bundle the language resources.
 
-Create a directory named `language`, then create a language file called `en_us.yml` in `language` directory. If you want to support simplified chinese, you can create a file named `zh_cn.yml`, [others language code see here](appendix/multi_language_support.md).
+Create a directory named `language`, then create an english language file called `en_us.yml` in `language` directory. If you also want to support simplified chinese, you can create a file named `zh_cn.yml`, [other language codes see here](appendix/multi_language_support.md).
 
 The file content as following:
 
@@ -41,7 +41,19 @@ The file content as following:
 [zh_cn.yml](hello-runflow/language/zh_cn.yml ':include :type=code')
 
 
-> We strongly suggest developer to support english language.
+> We strongly suggest developer to support english language at least.
+
+## Describing Plugin (Optional)
+
+By reading description file, let users known what features your plugin provided and how to use these functions conveniently.
+
+Use english to describe the plugin by creating `description_en_us.md` in project directory, and writing the helpful content to users. In this example, we write the following content:
+
+[description_en_us.yml](hello-runflow/description_en_us.md ':include :type=code')
+
+Creating `description_zh_cn.yml` to support simplified chinese description:
+
+[description_zh_cn.yml](hello-runflow/description_zh_cn.md ':include :type=code')
 
 ## Running Plugin
 
