@@ -14,7 +14,7 @@ Next, make a new json file to response fixed text, and call it `hello_runflow.js
 
 [hello_runflow.json](hello-runflow/hello_runflow.json ':include :type=code')
 
-> Learn more about these fields, see [Action Result](appendix/action_result.md).
+> Learn more about these fields, see [Action Result](appendix/action_result.md#action-result-fields-explanation).
 
 ## Writing Plugin Configuration File
 
@@ -22,13 +22,13 @@ In this step, you should create a plugin configuration file that named `plugin-s
 
 [plugin-spec.yml](hello-runflow/plugin-spec.yml ':include :type=code')
 
-> Learn more about the [Plugin Specification Configuration](appendix/plugin_configuration.md)
+> Learn more about the [Plugin Specification Configuration](appendix/plugin_specification.md#plugin-specification)
 
 ## Bundling Language Resource (Optional)
 
 If you want to your plugin to support multi languages, you need bundle the language resources.
 
-Create a directory named `language`, then create an english language file called `en_us.yml` in `language` directory. If you also want to support simplified chinese, you can create a file named `zh_cn.yml`, [other language codes see here](appendix/multi_language_support.md).
+Create a directory named `language`, then create an english language file called `en_us.yml` in `language` directory. If you also want to support simplified chinese, you can create a file named `zh_cn.yml`, [other language codes see here](appendix/language_code.md#language-code).
 
 The file content as following:
 
@@ -59,8 +59,10 @@ Creating `description_zh_cn.yml` to support simplified chinese description:
 
 When you follow the steps to get here, everything is ready, now we just running it. Open RunFlow action window, go to Settings -> General Settings, scroll to the bottom, you will see a label `Load External Plugins`, choose our `plugin-spec.yml` to load this plugin.
 
-Then type the `hello` keyword in action input field, you will see the result: `Hello RunFlow`, and if you switch the language to simplified chinese, you will see `你好RunFlow`.
+Then type the `hello` keyword in action input field, you will see the result: `Hello RunFlow`, and if you switch the language to simplified chinese, you will see `你好RunFlow` (if you bundled `zn_cn.yml`).
 
 > [The Example Full Code](https://github.com/myrestop/myflow-plugin-guide/tree/master/hello-runflow)
 
 ## What's Next
+
+Learn our [**conceptual interpretation**](conceptual_interpretation.md#conceptual-interpretation).

@@ -24,4 +24,12 @@ We sincerely invite you to be a plugin developer on our platform. Let us build t
 
 ## Document In Short
 
-[Getting Started](getting_started.md) explains how to write a 'Hello RunFlow' plugin, including multi-languages support and writing a plugin description page, and we will show you some core necessary fields in the plugin configuration file `plugin-spec.yml`.
+[**Getting Started**](getting_started.md#getting-started) explains how to write a 'Hello RunFlow' plugin, including multi-languages support and writing a plugin description page, and we will show you some core necessary fields in the plugin configuration file `plugin-spec.yml`.
+
+[**Conceptual Interpretation**](conceptual_interpretation.md#conceptual-interpretation) covers our main features and concepts, and it's easy to understand.
+
+[**General Plugin Guide**](general-plugin-guide/general_guide.md#general-plugin-guide) show you how to write a general fully functional plugin, including action handler, theme provider, placeholder updater and plugin cycle listener.
+
+[**Jar Plugin Guide**](jar-plugin-guide/jar_guide.md#jar-plugin-guide), in this guide, we will talk about many advanced features and APIs, jar plugin can integrate into our app, you can do anything you want at the runtime.
+
+[**Upload Plugin**](upload_plugin.md#upload-to-plugin-store), in this chapter, you will learn how to upload your plugin to our plugin store.
