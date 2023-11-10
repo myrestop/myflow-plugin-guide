@@ -9,11 +9,6 @@ compatible-version:
   until-build: 2147483647
 owner:
   name: MyRest
-  homepage: https://myrest.top/myflow
-platforms:
-  - WINDOWS
-  - MACOS
-  - LINUX
 actions:
   - name-bundle-id: hello
     keywords:
