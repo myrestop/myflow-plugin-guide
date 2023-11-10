@@ -13,7 +13,7 @@
 | actionCallback       | Object                                                | customize callback execution, set this value will ignore action method field, in general plugin, it's a string, |                    |
 | sortOrder            | Enum<[SortOrder](#sort-order)>                        | sort priority in callback list                                                                                  | "NONE"             |
 | actionWindowBehavior | Enum<[ActionWindowBehavior](#action-window-behavior)> | how to handle action window after callback executed                                                             | "HIDE_IF_POSSIBLE" |
-| showNotify           | boolean                                               | show notify after callback executed                                                                             | true               |
+| showNotify           | Boolean                                               | show notify after callback executed                                                                             | true               |
 
 ### Action Method
 
@@ -49,7 +49,7 @@
 | NOTHING          | do nothing                   |
 
 
-### Full Example JSON
+### JSON Example
 
 ```json
 {

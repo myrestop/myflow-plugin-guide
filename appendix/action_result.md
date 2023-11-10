@@ -14,7 +14,7 @@
 | result           | Object                                                                                                     | the real computed result                                                                                                   | null               |
 | callbacks        | List<[ActionResultCallback](appendix/action_result_callback.md#action-result-callback-fields-explanation)> | the result execution method                                                                                                |                    |
 | content          | @Composable                                                                                                | customize render the action's ui, only jar plugin can do this                                                              |                    |
-| contentHeight    | int                                                                                                        | the customize ui height, set -1 to avoid our height limitation                                                             |                    |
+| contentHeight    | Int                                                                                                        | the customize ui height, set -1 to avoid our height limitation                                                             |                    |
 | executedCallback | Object                                                                                                     | in general plugin, this is a string type, we call this after callback executed                                             |                    |
 
 ### Action Result Title
@@ -32,7 +32,7 @@
 | PLAIN_TITLE     | plain text     |
 | SUBTITLE        | subscript text |
 
-### Full Example JSON
+### JSON Example
 
 ```json
 {
