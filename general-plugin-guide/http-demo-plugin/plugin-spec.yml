@@ -1,0 +1,19 @@
+id: runflow.http
+name: HTTP Plugin
+entry: http://127.0.0.1:8080
+customize-loader: http
+version: 1.0.0
+compatible-version:
+  since-build: 0
+  until-build: 2147483647
+actions:
+  - keywords:
+      - httpemoji
+    handler: "{entry}/action"
+cycle-listener: "{entry}/cycle-listener"
+placeholder-updaters:
+  - updater: "{entry}/placeholder"
+    preview-text: 😁
+themes:
+  - service: "{entry}/theme"
+    name-bundle-id: Demo Theme
