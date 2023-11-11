@@ -1,0 +1,5 @@
+len=0;
+for(i=0;i<args.size();i++){
+len=len+args.get(i).getStrValue().length();
+}
+return "😊".repeat(len);

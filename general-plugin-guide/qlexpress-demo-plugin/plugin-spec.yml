@@ -1,0 +1,12 @@
+id: runflow.qlexpress
+name: QLExpress Plugin
+customize-loader: qlexpress
+version: 1.0.0
+compatible-version:
+  since-build: 0
+  until-build: 2147483647
+actions:
+  - keywords:
+      - qlemoji
+    handler: ./emoji.qlexpress
+cycle-listener: cycle_listener.qlexpress
