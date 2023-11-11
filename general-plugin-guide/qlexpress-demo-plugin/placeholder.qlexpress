@@ -1,0 +1,3 @@
+list=listof("😁","🤣","😊","😂","😢","😎","😉","😜","😆","🤔","🤢","😃");
+idx=RandomUtil.randomInt(list.size());
+return list.get(idx);

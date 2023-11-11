@@ -8,5 +8,11 @@ compatible-version:
 actions:
   - keywords:
       - qlemoji
-    handler: ./emoji.qlexpress
-cycle-listener: cycle_listener.qlexpress
+    handler: ./action.qlexpress
+cycle-listener: ./cycle_listener.qlexpress
+placeholder-updaters:
+  - updater: ./placeholder.qlexpress
+    preview-text: 😁
+themes:
+  - service: ./theme.json
+    name-bundle-id: Demo Theme
