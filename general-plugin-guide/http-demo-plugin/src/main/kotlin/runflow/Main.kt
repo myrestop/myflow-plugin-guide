@@ -34,7 +34,6 @@ fun main() {
                 println(body)
                 val method = body["method"] as String
                 if (method == "EXECUTED_CALLBACK") {
-                    call.respondText("")
                     return@post
                 }
                 val param = body["body"] as Map<String, Any>
