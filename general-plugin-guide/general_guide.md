@@ -27,6 +27,8 @@ compatible-version:
 
 **In this implementation, we will pass a parameter to you via commandline which is a base64 encoded json string, so when you get the argument, first you should decode it to json string by base64, then use a json library you liked to parse it.**
 
+[**The Example Full Code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin).
+
 #### **HTTP**
 
 In this plugin, we create a project directory named `http-demo-plugin`, and write the following content to `plugin-spec.yml` file.
@@ -44,6 +46,8 @@ compatible-version:
 
 **In this implementation, we will use http post method to request you with a json body, and we require your http interface to respond within 500 milliseconds.** 
 
+[**The Example Full Code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin).
+
 #### **Python**
 
 In this plugin, we create a project directory named `python-demo-plugin`, and write the following content to `plugin-spec.yml` file.
@@ -60,6 +64,8 @@ compatible-version:
 
 **In python implementation, it is essentially same as `commandline`, we will pass a parameter to you via commandline which is a base64 encoded json string.**
 
+[**The Example Full Code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/python-demo-plugin).
+
 #### **QLExpress**
 
 In this plugin, we create a project directory named `qlexpress-demo-plugin`, and write the following content to `plugin-spec.yml` file.
@@ -75,6 +81,8 @@ compatible-version:
 ```
 
 **In this implementation, the request json parameter we will put them into the context directly, you can use them as variables.** [Learn QLExpress.](https://github.com/alibaba/QLExpress)
+
+[**The Example Full Code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/qlexpress-demo-plugin).
 
 <!-- tabs:end -->
 
