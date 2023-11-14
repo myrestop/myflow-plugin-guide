@@ -49,6 +49,9 @@ tasks.build {
                 from("./build/bin/native/debugExecutable/commandline-demo-plugin.exe")
                 into("./windows")
                 rename { old -> old.removeSuffix(".exe") }
+            } else {
+                from("./build/bin/native/debugExecutable/commandline-demo-plugin")
+                into(if (hostOs.startsWith("mac", true)) "./macos" else "./linux")
             }
         }
     }

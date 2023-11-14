@@ -30,7 +30,7 @@ fun main(args: Array<String>) {
                             put("actionId", "emoji")
                             putJsonArray("title") {
                                 addJsonObject {
-                                    put("value", "^_^".repeat(len))
+                                    put("value", "😃".repeat(len))
                                     put("type", "PLAIN_TITLE")
                                 }
                             }
