@@ -1,5 +1,5 @@
 import sys
 
-# get arguments which we pass to you
-# sys.argv[1:]
+# get argument that we pass to you
+# sys.argv[1]
 print("RUNNING")

@@ -92,7 +92,7 @@ compatible-version:
 
 Learn [the request parameter common fields](appendix/json_rpc.md#the-request-parameter-common-fields), you can also read it later.
 
-In `qlexpress` plugin, all of these fields are variables, otherwise as a json parameter.
+In `qlexpress` plugin, all of these fields are variables, otherwise as a json string.
 
 ## Writing Functions
 

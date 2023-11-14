@@ -13,4 +13,5 @@
     - [Plugin Specification](appendix/plugin_specification.md#plugin-specification "RunFlow Plugin Guide")
     - [Language Code](appendix/language_code.md#language-code "RunFlow Plugin Guide")
     - [The Request Parameter Common Fields](appendix/json_rpc.md#the-request-parameter-common-fields "RunFlow Plugin Guide")
+    - [Plugin State](appendix/plugin_state.md#plugin-state "RunFlow Plugin Guide")
     - [Builtin Bundled Language](appendix/language_bundle.md#bundled-english-language-resources "RunFlow Plugin Guide")
