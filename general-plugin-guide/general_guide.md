@@ -96,7 +96,10 @@ In `qlexpress` plugin, all of these fields are variables, otherwise as a json st
 
 ## Writing Functions
 
-- [**Cycle Listener**](general-plugin-guide/cycle-listener.md#cycle-listener)
-- [**Action**](general-plugin-guide/action.md#action)
-- [**Placeholder**](general-plugin-guide/placeholder.md#placeholder)
-- [**Theme**](general-plugin-guide/theme.md#theme)
+- [**Cycle Listener**](general-plugin-guide/cycle-listener.md#cycle-listener) demonstrates how to listen plugin loading state.
+
+- [**Action**](general-plugin-guide/action.md#action) demonstrates how to parse the argument and response the action results.
+
+- [**Placeholder**](general-plugin-guide/placeholder.md#placeholder) demonstrates how to update our placeholder.
+
+- [**Theme**](general-plugin-guide/theme.md#theme) demonstrates how to update our theme.

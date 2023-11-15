@@ -1,0 +1,19 @@
+id: runflow.java
+name: Java Plugin
+customize-loader: default
+version: 1.0.0
+compatible-version:
+  since-build: 0
+  until-build: 2147483647
+cycle-listener: runflow.JavaCycleListener
+actions:
+  - keywords:
+      - javaemoji
+    handler: runflow.JavaActionHandler
+    toolbar: runflow.KotlinToolbar
+placeholder-updaters:
+  - updater: runflow.JavaPlaceholder
+    preview-text: 😁
+themes:
+  - service: funflow.KotlinTheme
+    name-bundle-id: Demo Theme

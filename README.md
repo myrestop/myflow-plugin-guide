@@ -33,3 +33,5 @@ We sincerely invite you to be a plugin developer on our platform. Let us build t
 [**Jar Plugin Guide**](jar-plugin-guide/jar_guide.md#jar-plugin-guide), in this guide, we will talk about many advanced features and APIs, jar plugin can integrate into our app, you can do anything you want at the runtime.
 
 [**Upload Plugin**](upload_plugin.md#upload-to-plugin-store), in this chapter, you will learn how to upload your plugin to our plugin store.
+
+[**Appendix**](appendix/appendix.md#appendix) includes some useful reference material.
