@@ -25,7 +25,7 @@
 | ON_PLUGIN_RUN       | plugin started, only in cycle listener                       |
 | BEFORE_APP_EXIT     | before app exit, only in cycle listener                      |
 
-Json Example
+### Json Example
 
 ```json
 {

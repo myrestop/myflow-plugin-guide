@@ -13,3 +13,6 @@ cycle-listener: ./cycle_listener.py
 placeholder-updaters:
   - updater: ./placeholder.py
     preview-text: a python placeholder
+themes:
+  - service: ./theme.json
+    name-bundle-id: Demo Theme

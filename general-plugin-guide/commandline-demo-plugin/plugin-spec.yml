@@ -14,3 +14,6 @@ cycle-listener: "{entry}"
 placeholder-updaters:
   - updater: "{entry}"
     preview-text: a commandline placeholder
+themes:
+  - service: ./theme.json
+    name-bundle-id: Demo Theme

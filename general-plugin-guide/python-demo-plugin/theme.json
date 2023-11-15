@@ -1,0 +1,15 @@
+{
+    "isLight": true,
+    "primary": "FF4938E0",
+    "primaryVariant": "FFC700C0",
+    "secondary": "FF010D16",
+    "secondaryVariant": "FF087A23",
+    "background": "FF5127F0",
+    "surface": "FF64D619",
+    "error": "FF930B6B",
+    "onPrimary": "FF2F5A35",
+    "onSecondary": "FF00CA35",
+    "onBackground": "FFD71105",
+    "onSurface": "FF7042A6",
+    "onError": "FFC47EAE"
+}

@@ -10,14 +10,16 @@ The following sections contain reference material you may find useful in your de
 
 - [Plugin Specification](appendix/plugin_specification.md#plugin-specification)
 
-- [Language Code](appendix/language_code.md#language-code)
-
 - [The Request Parameter Common Fields](appendix/json_rpc.md#the-request-parameter-common-fields)
 
 - [Plugin State](appendix/plugin_state.md#plugin-state)
 
 - [Hot Event Type](appendix/hot_event_type.md#hot-event-type)
 
+- [Theme](appendix/theme.md#theme)
+
 - [QLExpress](appendix/qlexpress.md#qlexpress)
+
+- [Language Code](appendix/language_code.md#language-code)
 
 - [Builtin Bundled Language](appendix/language_bundle.md#bundled-english-language-resources)
