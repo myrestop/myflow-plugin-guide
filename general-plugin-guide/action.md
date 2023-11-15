@@ -121,13 +121,13 @@ And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugi
 
 In this example we create an action file named `action.py`, and writing the following content:
 
-[cycle_listener.py](python-demo-plugin/action.py ':include :type=code')
+[action.py](python-demo-plugin/action.py ':include :type=code')
 
 #### **QLExpress**
 
 In this example we create an action file named `action.qlexpress`, and writing the following content:
 
-[cycle_listener.qlexpress](qlexpress-demo-plugin/action.qlexpress ':include :type=code java')
+[action.qlexpress](qlexpress-demo-plugin/action.qlexpress ':include :type=code java')
 
 **Action special in qlexpress:** you can just return a string value, we'll convert to the following structure, otherwise you should use `java.util.List` to wrap the `java.util.Map`.
 

@@ -10,6 +10,10 @@ To provide a theme, you can create a theme json file, or respond [**theme as jso
 
 In this example, we create a theme file named: [**theme.json**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/theme.json) in [**commandline demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin).
 
+The content is as follows:
+
+[theme.json](commandline-demo-plugin/theme.json ':include :type=code')
+
 #### **HTTP**
 
 In this example, you need expose an endpoint `/theme` in your web server, we'll use post method to request you.
@@ -20,13 +24,13 @@ And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugi
 
 In this example we create a theme file named `theme.json`, and writing the following content:
 
-[cycle_listener.py](python-demo-plugin/theme.json ':include :type=code')
+[theme.json](python-demo-plugin/theme.json ':include :type=code')
 
 #### **QLExpress**
 
 In this example we create a theme file named `theme.json`, and writing the following content:
 
-[cycle_listener.qlexpress](qlexpress-demo-plugin/theme.json ':include :type=code')
+[theme.json](qlexpress-demo-plugin/theme.json ':include :type=code')
 
 <!-- tabs:end -->
 

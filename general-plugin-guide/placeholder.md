@@ -22,13 +22,13 @@ And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugi
 
 In this example we create a placeholder file named `placeholder.py`, and writing the following content:
 
-[cycle_listener.py](python-demo-plugin/placeholder.py ':include :type=code')
+[placeholder.py](python-demo-plugin/placeholder.py ':include :type=code')
 
 #### **QLExpress**
 
 In this example we create a placeholder file named `placeholder.qlexpress`, and writing the following content:
 
-[cycle_listener.qlexpress](qlexpress-demo-plugin/placeholder.qlexpress ':include :type=code java')
+[placeholder.qlexpress](qlexpress-demo-plugin/placeholder.qlexpress ':include :type=code java')
 
 <!-- tabs:end -->
 
