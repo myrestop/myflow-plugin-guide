@@ -1,10 +1,10 @@
 # Cycle Listener
 
-If you want to listen your plugin state, you should add a cycle listener to `plugin-spec.yml` file. And we will pass the state to you use the `method` field in our [common fields explanation](appendix/json_rpc.md#the-request-parameter-common-fields).
+If you want to listen your plugin state, you should add a cycle listener to `plugin-spec.yml` file. And we will pass the state to you use the `method` field explained in our [common fields explanation](appendix/json_rpc.md#the-request-parameter-common-fields).
 
 In `BEFORE_PLUGIN_LOAD` and `AFTER_PLUGIN_LOADED` two request methods, we'll pass the plugin location path to you by putting into `body` field, otherwise no other parameters. 
 
-Example json:
+Request example json:
 
 ```json
 {
@@ -21,7 +21,7 @@ Example json:
 
 #### **Commandline**
 
-In this example, you should build a executable binary file or write a executable shell script, you can get an argument from commandline.
+In this example, you should build an executable binary file or write an executable shell script, you can get an argument from commandline.
 
 And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/src/nativeMain/kotlin/Main.kt) in [**commandline demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin).
 

@@ -49,7 +49,7 @@
 | NOTHING          | do nothing                   |
 
 
-### JSON Example
+### Json Example
 
 ```json
 {

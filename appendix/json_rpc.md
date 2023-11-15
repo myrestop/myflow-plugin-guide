@@ -24,3 +24,14 @@
 | ON_PLUGIN_UNINSTALL | user prepare to uninstall the plugin, only in cycle listener |
 | ON_PLUGIN_RUN       | plugin started, only in cycle listener                       |
 | BEFORE_APP_EXIT     | before app exit, only in cycle listener                      |
+
+Json Example
+
+```json
+{
+    "language": "EN_US",
+    "method": "BEFORE_APP_EXIT",
+    "openId": "abc",
+    "body": null
+}
+```

@@ -80,7 +80,7 @@ compatible-version:
   until-build: 2147483647
 ```
 
-**In this implementation, the request json parameter we will put them into the context directly, you can use them as variables.** [Learn QLExpress.](https://github.com/alibaba/QLExpress)
+**In this implementation, the request json parameter we will put them into the context directly, you can use them as variables.** [Learn our qlexpress optimization](appendix/qlexpress.md#qlexpress) & [Learn QLExpress](https://github.com/alibaba/QLExpress)
 
 [**The Example Full Code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/qlexpress-demo-plugin).
 

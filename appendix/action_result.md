@@ -32,7 +32,7 @@
 | PLAIN_TITLE     | plain text     |
 | SUBTITLE        | subscript text |
 
-### JSON Example
+### Json Example
 
 ```json
 {

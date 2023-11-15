@@ -8,7 +8,7 @@ In this chapter, you will learn how to write a simple fixed response plugin.
 
 You'll start by making a directory where you like, it doesn't matter where the directory locate, or directly choose an exists directory. Here, we will create a directory named: `hello-runflow`.
 
-## Writing Hello JSON File
+## Writing Hello Json File
 
 Next, make a new json file to response fixed text, and call it `hello_runflow.json` (the file name is not important, it's just we named it like this here), open the file and write the following content.
 
