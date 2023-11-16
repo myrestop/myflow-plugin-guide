@@ -20,7 +20,7 @@ class KotlinTheme : ThemeProvider {
         onBackground = randomColor(),
         onSurface = randomColor(),
         onError = randomColor(),
-        isLight = true,
+        isLight = false,
     )
 
     private fun randomColor(): Color {

@@ -18,5 +18,5 @@ placeholder-updaters:
   - updater: runflow.JavaPlaceholder
     preview-text: 😁
 themes:
-  - service: funflow.KotlinTheme
+  - service: runflow.KotlinTheme
     name-bundle-id: Demo Theme

@@ -73,3 +73,5 @@ themes:
 ```
 
 <!-- tabs:end -->
+
+> Read [**theme explanation**](appendix/theme.md#theme).
