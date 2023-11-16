@@ -41,7 +41,7 @@ The file content as following:
 [zh_cn.yml](hello-runflow/language/zh_cn.yml ':include :type=code')
 
 
-> We strongly suggest developer to support english language at least.
+> **We strongly suggest developer to support english language at least.**
 
 ## Describing Plugin (Optional)
 
@@ -57,7 +57,7 @@ Creating `description_zh_cn.yml` to support simplified chinese description:
 
 ## Running Plugin
 
-When you follow the steps to get here, everything is ready, now we just running it. Open RunFlow action window, go to Settings -> General Settings, scroll to the bottom, you will see a label `Load External Plugins`, choose our `plugin-spec.yml` to load this plugin.
+When you follow the steps to get here, everything is ready, now we just running it. Open RunFlow action window, go to **Settings** -> **General Settings**, scroll to the bottom, you will see a label `Load External Plugins`, choose our `plugin-spec.yml` to load this plugin.
 
 Then type the `hello` keyword in action input field, you will see the result: `Hello RunFlow`, and if you switch the language to simplified chinese, you will see `你好RunFlow` (if you bundled `zn_cn.yml`).
 

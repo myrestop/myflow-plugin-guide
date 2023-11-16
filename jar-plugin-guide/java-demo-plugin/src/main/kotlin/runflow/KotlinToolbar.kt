@@ -6,8 +6,8 @@ import top.myrest.myflow.component.ActionKeywordToolbar
 import top.myrest.myflow.component.ActionToolbar
 
 class KotlinToolbar : ActionKeywordToolbar {
-    override val toolbar: (ActionKeywordPin, ActionToolbar) -> Unit
-        get() = @Composable { pin, toolbar ->
+    override val toolbar: @Composable (ActionKeywordPin, ActionToolbar) -> Unit
+        get() = { pin, toolbar ->
 
         }
 }

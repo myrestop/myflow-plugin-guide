@@ -34,4 +34,4 @@ We sincerely invite you to be a plugin developer on our platform. Let us build t
 
 [**Upload Plugin**](upload_plugin.md#upload-to-plugin-store), in this chapter, you will learn how to upload your plugin to our plugin store.
 
-[**Appendix**](appendix/appendix.md#appendix) includes some useful reference material.
+[**Appendix**](appendix/appendix.md#appendix) includes some useful reference materials.
