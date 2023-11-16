@@ -51,7 +51,7 @@ public class JavaActionHandler extends ActionRequireArgHandler {
         String value = StrUtil.repeat("😃", len);
         List<ActionResultTitle> title = Collections.singletonList(new ActionResultTitle(value, ActionTitleType.PLAIN_TITLE));
         List<ActionResultCallback> callbacks = Collections.singletonList(new ActionResultCallback(null, "", null, ActionMethod.COPY_RESULT, null, SortOrder.NONE, ActionWindowBehavior.HIDE_IF_POSSIBLE, true));
-        ActionResult result = new ActionResult("emoji", "", 100, null, title, "", value, callbacks, null, null, null);
+        ActionResult result = new ActionResult("java", "", 100, null, title, "", value, callbacks, null, null, null);
         return Collections.singletonList(result);
     }
 }

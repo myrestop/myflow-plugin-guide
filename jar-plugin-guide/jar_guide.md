@@ -74,3 +74,5 @@ Create a `MainTest.java` file locate in `src/test/java`, the codes like followin
 - [**Http Service**](jar-plugin-guide/http_service.md#http-service) interprets how to use our builtin http service to expose endpoint.
 
 - [**Bundle Language**](jar-plugin-guide/bundle_language.md#bundle-language-to-bean) interprets how to bundle language resource to java bean.
+
+- [**Utilities**](jar-plugin-guide/utilities.md#utilities) interprets all the useful classes, methods and fields.
