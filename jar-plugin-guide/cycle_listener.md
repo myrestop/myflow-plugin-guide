@@ -8,6 +8,8 @@ Create a java class named `JavaCycleListener.java` locate in `src/main/java/runf
 
 [JavaCycleListener.java](java-demo-plugin/src/main/java/runflow/JavaCycleListener.java ':include :type=code')
 
+> See [PluginState](appendix/plugin_state.md#plugin-state) explanation.
+
 ## Adding To Specification File
 
 Add the following content to `plugin-spec.yml`:

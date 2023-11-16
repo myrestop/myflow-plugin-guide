@@ -1,5 +1,6 @@
 id: runflow.java
 name: Java Plugin
+entry: ./java-demo-plugin.jar
 customize-loader: default
 version: 1.0.0
 compatible-version:
@@ -8,9 +9,11 @@ compatible-version:
 cycle-listener: runflow.JavaCycleListener
 actions:
   - keywords:
-      - javaemoji
+      - java
     handler: runflow.JavaActionHandler
-    toolbar: runflow.KotlinToolbar
+  - keywords:
+      - kotlin
+    handler: runflow.KotlinActionHandler
 placeholder-updaters:
   - updater: runflow.JavaPlaceholder
     preview-text: 😁

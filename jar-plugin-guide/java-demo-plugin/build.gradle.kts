@@ -24,6 +24,10 @@ dependencies {
     testImplementation("top.myrest:myflow-baseimpl:$myflowVersion")
 }
 
+tasks.withType<JavaCompile> {
+    options.encoding = "UTF-8"
+}
+
 tasks.withType<KotlinCompile> {
     kotlinOptions.jvmTarget = "17"
 }

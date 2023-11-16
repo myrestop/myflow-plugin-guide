@@ -25,6 +25,7 @@ Create `plugin-spec.yml` in project directory, writing content as follows:
 ```yaml
 id: runflow.java
 name: Java Plugin
+entry: ./java-demo-plugin.jar
 customize-loader: default
 version: 1.0.0
 compatible-version:
