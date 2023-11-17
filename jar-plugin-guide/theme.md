@@ -4,7 +4,7 @@ In this section, we’ll implement a simple random theme provider.
 
 ## Writing Theme
 
-Create a kotlin theme file named `KotlinTheme.kt` locate in `src/main/kotlin/runflow`, and writing the following content:
+Create a kotlin file named `KotlinTheme.kt` locate in `src/main/kotlin/runflow`, and writing the following content:
 
 [KotlinTheme.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinTheme.kt ':include :type=code')
 

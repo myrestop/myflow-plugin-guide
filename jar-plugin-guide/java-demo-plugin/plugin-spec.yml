@@ -20,3 +20,8 @@ placeholder-updaters:
 themes:
   - service: runflow.KotlinTheme
     name-bundle-id: Demo Theme
+action-result-callback-extensions:
+  - service: runflow.JavaExtension
+    name-bundle-id: Demo Extension
+data-encryptors:
+  - runflow.JavaEncryptor

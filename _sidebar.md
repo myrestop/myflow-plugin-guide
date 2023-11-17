@@ -12,7 +12,7 @@
   - [Placeholder](jar-plugin-guide/placeholder.md#placeholder "RunFlow Plugin Guide")
   - [Theme](jar-plugin-guide/theme.md#theme "RunFlow Plugin Guide")
   - [**Action Callback Extension**](jar-plugin-guide/callback_extension.md#action-callback-extension "RunFlow Plugin Guide")
-  - [Storing Data](jar-plugin-guide/data_store.md#storing-data "RunFlow Plugin Guide")
+  - [**Storing Data**](jar-plugin-guide/data_store.md#storing-data "RunFlow Plugin Guide")
   - [Data Encryptor](jar-plugin-guide/data_encryptor.md#data-encryptor "RunFlow Plugin Guide")
   - [Data Sync Service](jar-plugin-guide/data_sync_service.md#data-sync-service "RunFlow Plugin Guide")
   - [Translator](jar-plugin-guide/translator.md#translator "RunFlow Plugin Guide")

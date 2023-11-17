@@ -4,7 +4,7 @@ In this section, we’ll walk you through writing a random emoji string as the p
 
 ## Writing Placeholder
 
-Create a java placeholder file named `JavaPlaceholder.java` locate in `src/main/java/runflow`, and writing the following content:
+Create a java file named `JavaPlaceholder.java` locate in `src/main/java/runflow`, and writing the following content:
 
 [JavaPlaceholder.java](java-demo-plugin/src/main/java/runflow/JavaPlaceholder.java ':include :type=code')
 

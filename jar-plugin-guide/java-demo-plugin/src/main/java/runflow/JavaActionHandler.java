@@ -48,10 +48,10 @@ public class JavaActionHandler extends ActionRequireArgHandler {
     @Override
     public List<ActionResult> queryArgAction(@NotNull ActionParam actionParam) {
         int len = actionParam.getArgs().stream().mapToInt(e -> e.getStrValue().length()).sum();
-        String value = StrUtil.repeat("😃", len);
-        List<ActionResultTitle> title = Collections.singletonList(new ActionResultTitle(value, ActionTitleType.PLAIN_TITLE));
+        String result = StrUtil.repeat("😃", len);
+        List<ActionResultTitle> title = Collections.singletonList(new ActionResultTitle(result, ActionTitleType.PLAIN_TITLE));
         List<ActionResultCallback> callbacks = Collections.singletonList(new ActionResultCallback(null, "", null, ActionMethod.COPY_RESULT, null, SortOrder.NONE, ActionWindowBehavior.HIDE_IF_POSSIBLE, true));
-        ActionResult result = new ActionResult("java", "", 100, null, title, "", value, callbacks, null, null, null);
-        return Collections.singletonList(result);
+        ActionResult actionResult = new ActionResult("java", "", 100, null, title, "", result, callbacks, null, null, null);
+        return Collections.singletonList(actionResult);
     }
 }
