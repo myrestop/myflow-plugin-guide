@@ -47,4 +47,4 @@ interface ActionWindowState {
 }
 ```
 
-> **You can refer our action window to design an action window, to make it more concise, more fashionable, more gorgeous.**
+> **You can refer our action window to design an action window, to make it more concise, fashionable and gorgeous.**
