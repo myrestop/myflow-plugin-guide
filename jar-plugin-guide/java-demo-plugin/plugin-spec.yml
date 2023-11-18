@@ -13,7 +13,13 @@ actions:
     handler: runflow.JavaActionHandler
   - keywords:
       - kotlin
+    name-bundle-id: Demo Action
     handler: runflow.KotlinActionHandler
+    toolbar: runflow.KotlinToolbar
+  - keywords:
+      - funcpage
+    name-bundle-id: Demo Func Page
+    handler: runflow.KotlinFuncPage
 placeholder-updaters:
   - updater: runflow.JavaPlaceholder
     preview-text: 😁
@@ -31,3 +37,5 @@ data-sync-services:
 translator:
   service: runflow.JavaTranslator
   name-bundle-id: Demo Translator
+http-modules:
+  - runflow.KotlinHttpService.helloModule

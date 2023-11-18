@@ -30,6 +30,7 @@ Add the following content in `plugin-spec.yml`'s `actions` node:
 ```yaml
   - keywords:
       - kotlin
+    name-bundle-id: Demo Action
     handler: runflow.KotlinActionHandler
 ```
 

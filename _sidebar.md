@@ -33,6 +33,7 @@
     - [Plugin State](appendix/plugin_state.md#plugin-state "RunFlow Plugin Guide")
     - [Hot Event Type](appendix/hot_event_type.md#hot-event-type "RunFlow Plugin Guide")
     - [Theme](appendix/theme.md#theme "RunFlow Plugin Guide")
+    - [Action Keyword Pin](appendix/action_keyword_pin.md#action-keyword-pin "RunFlow Plugin Guide")
     - [QLExpress](appendix/qlexpress.md#qlexpress "RunFlow Plugin Guide")
     - [Language Code](appendix/language_code.md#language-code "RunFlow Plugin Guide")
     - [Builtin Bundled Language](appendix/language_bundle.md#bundled-english-language-resources "RunFlow Plugin Guide")

@@ -18,6 +18,8 @@ The following sections contain reference material you may find useful in your de
 
 - [Theme](appendix/theme.md#theme)
 
+- [Action Keyword Pin](appendix/action_keyword_pin.md#action-keyword-pin)
+
 - [QLExpress](appendix/qlexpress.md#qlexpress)
 
 - [Language Code](appendix/language_code.md#language-code)
