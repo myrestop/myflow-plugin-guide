@@ -25,3 +25,9 @@ action-result-callback-extensions:
     name-bundle-id: Demo Extension
 data-encryptors:
   - runflow.JavaEncryptor
+data-sync-services:
+  - service: runflow.KotlinSyncService
+    name-bundle-id: Demo Sync Service
+translator:
+  service: runflow.JavaTranslator
+  name-bundle-id: Demo Translator
