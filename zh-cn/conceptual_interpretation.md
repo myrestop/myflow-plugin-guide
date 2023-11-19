@@ -1,4 +1,4 @@
-# Conceptual Interpretation
+# 名词解释
 
 This chapter will introduce you our main features and concepts, you will learn how to write a plugin with friendly experience. Wish you have a pleasant journey.
 
