@@ -2,7 +2,7 @@
 
 If you are a developer, no matter what programming language you use, you will learn how to write a RunFlow plugin quickly in this documentation.
 
-Because we allow you developing plugin without any restriction and limitation, so you should guarantee the plugin is safe for users and does not violate the law.
+**Because we allow you developing plugin without any restriction and limitation, so you should guarantee the plugin is safe for users and does not violate the law.**
 
 If you are a Java, or Kotlin, or any other JVM languages developer, you can interact better with RunFlow, because you can directly use many of the APIs we expose to you. And you can also customize the app ui.
 
