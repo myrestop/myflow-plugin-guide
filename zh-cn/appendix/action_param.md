@@ -1,39 +1,39 @@
-# Action Param
+# ActionParam
 
-| field        | type                                              | explanation                              | example |
-|--------------|---------------------------------------------------|------------------------------------------|---------|
-| scene        | Enum<[ActionKeywordScene](#action-keyword-scene)> | what's the scene triggered the keyword   | MAIN    |
-| originAction | String                                            | the origin content of user input         |         |
-| keyword      | String                                            | the keyword of user input                |         |
-| args         | List<[Arg](#arg)>                                 | the args that parsed from origin content |         |
-| sizeLimit    | Int                                               | we suggested the result list size        | 10      |
+| 字段           | 类型                                              | 说明        | 示例   |
+|--------------|-------------------------------------------------|-----------|------|
+| scene        | Enum<[ActionKeywordScene](#actionkeywordscene)> | 关键字触发的场景  | MAIN |
+| originAction | String                                          | 用户原始的输入内容 |      |
+| keyword      | String                                          | 用户输入的关键字  |      |
+| args         | List<[Arg](#arg)>                               | 用户输入的参数   |      |
+| sizeLimit    | Int                                             | 我们建议的限制数量 | 10   |
 
 ### Arg
 
-| field    | type                                    | explanation     | example |
-|----------|-----------------------------------------|-----------------|---------|
-| value    | Object                                  | the arg value   |         |
-| type     | Enum<[ActionArgType](#action-arg-type)> | the value type  |         |
-| strValue | String                                  | string of value |         |
+| 字段       | 类型                                    | 说明   | 示例 |
+|----------|---------------------------------------|------|----|
+| value    | Object                                | 原始值  |    |
+| type     | Enum<[ActionArgType](#actionargtype)> | 值的类型 |    |
+| strValue | String                                | 字符串值 |    |
 
-### Action Keyword Scene
+### ActionKeywordScene
 
-| name           | explanation                                            |
-|----------------|--------------------------------------------------------|
-| MAIN           | at main scene                                          |
-| PINNED_KEYWORD | at pinned keyword                                      |
-| func page      | at [func page](conceptual_interpretation.md#func-page) |
+| 名称             | 说明                                      |
+|----------------|-----------------------------------------|
+| MAIN           | 主场景                                     |
+| PINNED_KEYWORD | 固定的关键字                                  |
+| FUNC_PAGE      | [工作页](conceptual_interpretation.md#工作页) |
 
-### Action Arg Type
+### ActionArgType
 
-| name   | explanation      |
+| 名称     | 说明               |
 |--------|------------------|
 | STRING | java.lang.String |
 | FILE   | java.io.File     |
 | IMAGE  | java.awt.Image   |
 | URL    | java.net.URL     |
 
-### Json Example
+### Json示例
 
 ```json
 {

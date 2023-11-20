@@ -1,27 +1,27 @@
 # 附录
 
-The following sections contain reference material you may find useful in your developing journey.
+下面部分包含了开发过程中您可能会用到的一些有用的参考材料。
 
-- [Action Param](appendix/action_param.md#action-param)
+- [ActionParam](appendix/action_param.md#actionparam "RunFlow插件开发指南")
 
-- [Action Result Fields](appendix/action_result.md#fields-explanation)
+- [ActionResult](appendix/action_result.md#字段解释 "RunFlow插件开发指南")
 
-- [Action Result Callback Fields](appendix/action_result_callback.md#fields-explanation)
+- [ActionResultCallback](appendix/action_result_callback.md#字段解释 "RunFlow插件开发指南")
 
-- [Plugin Specification](appendix/plugin_specification.md#plugin-specification)
+- [PluginSpecification](appendix/plugin_specification.md#pluginspecification "RunFlow插件开发指南")
 
-- [The Request Parameter Common Fields](appendix/json_rpc.md#the-request-parameter-common-fields)
+- [JsonRpc请求公共字段](appendix/json_rpc.md#jsonrpc请求的公共字段 "RunFlow插件开发指南")
 
-- [Plugin State](appendix/plugin_state.md#plugin-state)
+- [PluginState](appendix/plugin_state.md#pluginstate "RunFlow插件开发指南")
 
-- [Hot Event Type](appendix/hot_event_type.md#hot-event-type)
+- [HotEventType](appendix/hot_event_type.md#hoteventtype "RunFlow插件开发指南")
 
-- [Theme](appendix/theme.md#theme)
+- [Theme](appendix/theme.md#theme "RunFlow插件开发指南")
 
-- [Action Keyword Pin](appendix/action_keyword_pin.md#action-keyword-pin)
+- [ActionKeywordPin](appendix/action_keyword_pin.md#actionkeywordpin "RunFlow插件开发指南")
 
-- [QLExpress](appendix/qlexpress.md#qlexpress)
+- [QLExpress](appendix/qlexpress.md#qlexpress "RunFlow插件开发指南")
 
-- [Language Code](appendix/language_code.md#language-code)
+- [语言编码](appendix/language_code.md#语言编码 "RunFlow插件开发指南")
 
-- [Builtin Bundled Language](appendix/language_bundle.md#bundled-english-language-resources)
+- [绑定的语言资源](appendix/language_bundle.md#绑定的简体中文资源 "RunFlow插件开发指南")

@@ -1,38 +1,38 @@
 # 字段解释
 
-**All these fields are optional at the listed below.**
+**下面列出的所有字段均是可选的。**
 
-### Action Result
+### ActionResult
 
-| field            | type                                                                                                       | explanation                                                                                                                    | example            |
-|------------------|------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|--------------------|
-| actionId         | String                                                                                                     | the result id, it impacts the result's weight, and it is the identity of the result, we'll use this value to remove duplicates | "id"               |
-| score            | Int                                                                                                        | the result score, it has an effect on sorting                                                                                  | 90                 |
-| logo             | Object                                                                                                     | in general plugin, this field type should be string, that means the logo path, in jar plugin, that can be image or painter     | "./logos/logo.png" |
-| title            | List<[ActionResultTitle](#action-result-title)>                                                            | the result title                                                                                                               |                    |
-| subtitle         | String                                                                                                     | the result subtitle                                                                                                            | "subtitle"         |
-| result           | Object                                                                                                     | the real computed result                                                                                                       | null               |
-| callbacks        | List<[ActionResultCallback](appendix/action_result_callback.md#fields-explanation)> | the result execution method                                                                                                    |                    |
-| content          | @Composable                                                                                                | customize render the action's ui, only jar plugin can do this                                                                  |                    |
-| contentHeight    | Int                                                                                                        | the customize ui height, set -1 to avoid our height limitation                                                                 |                    |
-| executedCallback | Object                                                                                                     | in general plugin, this is a string type, we call this after callback executed                                                 |                    |
+| 字段               | 类型                                                                    | 说明                                             | 示例                 |
+|------------------|-----------------------------------------------------------------------|------------------------------------------------|--------------------|
+| actionId         | String                                                                | 结果的ID，他将影响结果的权重，也是唯一标识符，我们将使用这个ID来删除重复值        | "id"               |
+| score            | Int                                                                   | 结果的分数，对排序有一定的影响                                | 90                 |
+| logo             | Object                                                                | 在通用插件中，本字段类型是String，在Jar插件中，还可以是image，或painter | "./logos/logo.png" |
+| title            | List<[ActionResultTitle](#actionresulttitle)>                         | 标题                                             |                    |
+| subtitle         | String                                                                | 副标题                                            | "subtitle"         |
+| result           | Object                                                                | 真实的运算结果                                        | null               |
+| callbacks        | List<[ActionResultCallback](appendix/action_result_callback.md#字段解释)> | 回调执行方法                                         |                    |
+| content          | @Composable                                                           | 自定义动作的界面，仅Jar插件支持                              |                    |
+| contentHeight    | Int                                                                   | 自定义界面的高度，设置为-1我们将不限制高度                         |                    |
+| executedCallback | Object                                                                | 回调被执行通知，在通用插件中，本字段是一个字符串                       |                    |
 
-### Action Result Title
+### ActionResultTitle
 
-| field | type                                        | explanation                                                            | example       |
-|-------|---------------------------------------------|------------------------------------------------------------------------|---------------|
-| value | String                                      | the title value                                                        | "Title"       |
-| type  | Enum<[ActionTitleType](#action-title-type)> | the title type                                                         | "PLAIN_TITLE" |
+| 字段    | 类型                                        | 说明    | 示例            |
+|-------|-------------------------------------------|-------|---------------|
+| value | String                                    | 标题的值  | "Title"       |
+| type  | Enum<[ActionTitleType](#actiontitletype)> | 标题的类型 | "PLAIN_TITLE" |
 
-### Action Title Type
+### ActionTitleType
 
-| name            | explanation    |
-|-----------------|----------------|
-| HIGHLIGHT_TITLE | highlight text |
-| PLAIN_TITLE     | plain text     |
-| SUBTITLE        | subscript text |
+| 名称              | 说明   |
+|-----------------|------|
+| HIGHLIGHT_TITLE | 高亮文本 |
+| PLAIN_TITLE     | 普通文本 |
+| SUBTITLE        | 下标文本 |
 
-### Json Example
+### Json示例
 
 ```json
 {

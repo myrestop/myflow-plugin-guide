@@ -22,7 +22,7 @@
 |----------------|--------------------------------------------------------|
 | MAIN           | at main scene                                          |
 | PINNED_KEYWORD | at pinned keyword                                      |
-| func page      | at [func page](conceptual_interpretation.md#func-page) |
+| FUNC_PAGE      | at [func page](conceptual_interpretation.md#func-page) |
 
 ### Action Arg Type
 

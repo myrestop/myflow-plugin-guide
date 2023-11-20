@@ -8,7 +8,7 @@
 | customizeLoader     | String                                            | no       | how to load the plugin, or the class loader of jar, [learn more](#customize-loader) | "customizable"       |
 | version             | String                                            | yes      | the plugin version                                                                  | "1.0.0"              |
 | logo                | String                                            | no       | logo file path, required if you want upload to plugin store                         | "./logos/logo.png"   |
-| homepage            | String                                            | no       | your homepage url                                                                   |                      |
+| homepage            | String                                            | no       | plugin homepage url                                                                 |                      |
 | compatibleVersion   | [CompatibleVersion](#compatible-version)          | yes      | compatible RunFlow version                                                          |                      |
 | owner               | [Vendor](#vendor)                                 | no       | owner of this plugin, required if you want upload to plugin store                   |                      |
 | contributors        | List<[Vendor](#vendor)>                           | no       | contributor of this plugin                                                          |                      |

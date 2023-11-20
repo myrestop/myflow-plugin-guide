@@ -1,137 +1,137 @@
-# Plugin Specification
+# PluginSpecification
 
-| field               | type                                              | required | explanation                                                                         | example              |
-|---------------------|---------------------------------------------------|----------|-------------------------------------------------------------------------------------|----------------------|
-| id                  | String                                            | yes      | the plugin id, you can apply it [here](https://myrest.top/user/plugins)             | "com.example.plugin" |
-| name                | String                                            | yes      | the plugin's english name, you can apply it [here](https://myrest.top/user/plugins) | "Demo Plugin"        |
-| entry               | String                                            | no       | plugin main entry file, in jar plugin, this is a required jar file                  | "plugin.jar"         |
-| customizeLoader     | String                                            | no       | how to load the plugin, or the class loader of jar, [learn more](#customize-loader) | "customizable"       |
-| version             | String                                            | yes      | the plugin version                                                                  | "1.0.0"              |
-| logo                | String                                            | no       | logo file path, required if you want upload to plugin store                         | "./logos/logo.png"   |
-| homepage            | String                                            | no       | your homepage url                                                                   |                      |
-| compatibleVersion   | [CompatibleVersion](#compatible-version)          | yes      | compatible RunFlow version                                                          |                      |
-| owner               | [Vendor](#vendor)                                 | no       | owner of this plugin, required if you want upload to plugin store                   |                      |
-| contributors        | List<[Vendor](#vendor)>                           | no       | contributor of this plugin                                                          |                      |
-| dependOnPlugins     | List<[DependOnPlugin](#depend-on-plugin)>         | no       | plugin depends                                                                      |                      |
-| cycleListener       | String                                            | no       | when plugin is loaded, or started, or stopped, or uninstalled, we'll call you       |                      |
-| languageBundleName  | String                                            | no       | bundle language to java class, only available for jar plugin                        |                      |
-| groups              | List<[Group](#group)>                             | no       | grouping                                                                            |                      |
-| actions             | List<[ActionKeywordProps](#action-keyword-props)> | no       | all of your [actions](conceptual_interpretation.md#action)                          |                      |
-| actionWindows       | List<[NamedService](#named-service)>              | no       | provide action window, only jar plugin available                                    |                      |
-| placeholderUpdaters | List<[PlaceholderUpdater](#placeholder-updater)>  | no       | update the placeholder of action input field                                        |                      |
-| themes              | List<[NamedService](#named-service)>              | no       | provide theme                                                                       |                      |
-| httpModules         | List\<String\>                                    | no       | run http service use [ktor](https://ktor.io/docs/welcome.html)                      |                      |
-| translator          | [NamedService](#named-service)                    | no       | provide a language translator, only jar plugin available                            |                      |
-| dataEncryptors      | List\<String\>                                    | no       | data encryptor, only jar plugin available                                           |                      |
-| dataSyncServices    | List<[NamedService](#named-service)>              | no       | provide data sync service, only jar plugin available                                |                      |
+| 字段                  | 类型                                              | 必填 | 说明                                                  | 示例                   |
+|---------------------|-------------------------------------------------|----|-----------------------------------------------------|----------------------|
+| id                  | String                                          | 是  | 插件Id，您可以在[这里](https://myrest.top/user/plugins)申请    | "com.example.plugin" |
+| name                | String                                          | 是  | 插件英文名称，您可以在[这里](https://myrest.top/user/plugins)申请  | "Demo Plugin"        |
+| entry               | String                                          | 否  | 插件入口文件，在Jar插件中，这必须是一个Jar文件                          | "plugin.jar"         |
+| customizeLoader     | String                                          | 否  | 插件类型或类加载器，[了解更多](#自定义加载器)                           | "customizable"       |
+| version             | String                                          | 是  | 插件版本                                                | "1.0.0"              |
+| logo                | String                                          | 否  | logo，如果需上传至插件商店，那么此字段必填                             | "./logos/logo.png"   |
+| homepage            | String                                          | 否  | 插件主页URL                                             |                      |
+| compatibleVersion   | [CompatibleVersion](#compatibleversion)         | 是  | 兼容RunFlow的版本                                        |                      |
+| owner               | [Vendor](#vendor)                               | 否  | 插件所有者，  如果需上传至插件商店，那么此字段必填                          |                      |
+| contributors        | List<[Vendor](#vendor)>                         | 否  | 插件的贡献者                                              |                      |
+| dependOnPlugins     | List<[DependOnPlugin](#dependonplugin)>         | 否  | 依赖的插件                                               |                      |
+| cycleListener       | String                                          | 否  | 插件状态监听，当插件运行、暂停或被卸载时，我们将通知您                         |                      |
+| languageBundleName  | String                                          | 否  | 绑定语言资源到JavaBean                                     |                      |
+| groups              | List<[Group](#group)>                           | 否  | 关键字分组                                               |                      |
+| actions             | List<[ActionKeywordProps](#actionkeywordprops)> | 否  | 插件所有的[动作](conceptual_interpretation.md#动作action)    |                      |
+| actionWindows       | List<[NamedService](#namedservice)>             | 否  | 提供工作窗口，仅Jar插件可用                                     |                      |
+| placeholderUpdaters | List<[PlaceholderUpdater](#placeholderupdater)> | 否  | 更新占位符                                               |                      |
+| themes              | List<[NamedService](#namedservice)>             | 否  | 提供主题                                                |                      |
+| httpModules         | List\<String\>                                  | 否  | 通过[ktor](https://ktor.io/docs/welcome.html)启用HTTP服务 |                      |
+| translator          | [NamedService](#namedservice)                   | 否  | 提供语言翻译功能，仅Jar插件可用                                   |                      |
+| dataEncryptors      | List\<String\>                                  | 否  | 提供数据加密器，仅Jar插件可用                                    |                      |
+| dataSyncServices    | List<[NamedService](#namedservice)>             | 否  | 提供数据同步服务，仅Jar插件可用                                   |                      |
 
-| field                          | type                                                                      | required | explanation                                                    | example          |
-|--------------------------------|---------------------------------------------------------------------------|----------|----------------------------------------------------------------|------------------|
-| names                          | Map<Enum<[LanguageType](appendix/language_code.md#language-code)>,String> | no       | plugin name in other language                                  | ZH_CN: "示例插件"    |
-| categories                     | List<Enum<[Category](#category)>>                                         | no       | required if you want upload to plugin store                    | - "PRODUCTIVITY" |
-| platforms                      | List<Enum<[PlatformType](#platform-type)>>                                | no       | your plugin supported platforms, default support all platforms |                  |
-| actionResultCallbackExtensions | List<[NamedService](#named-service)>                                      | no       | extends action result callbacks                                |                  |
+| 字段                             | 类型                                                               | 必填 | 说明                      | 示例               |
+|--------------------------------|------------------------------------------------------------------|----|-------------------------|------------------|
+| names                          | Map<Enum<[LanguageType](appendix/language_code.md#语言编码)>,String> | 否  | 其他语言下的插件名称              | ZH_CN: "示例插件"    |
+| categories                     | List<Enum<[Category](#category)>>                                | 否  | 插件分类，如果需上传至插件商店，那么此字段必填 | - "PRODUCTIVITY" |
+| platforms                      | List<Enum<[PlatformType](#platformtype)>>                        | 否  | 插件支持的操作系统，默认支持所有操作系统    |                  |
+| actionResultCallbackExtensions | List<[NamedService](#namedservice)>                              | 否  | 扩展结果回调                  |                  |
 
-### Compatible Version
+### CompatibleVersion
 
-**If you develop with jar plugin, and you called some APIs we provided to you, in this situation, you mostly need to set compatible version, you can see the compatible build number in our printed log.**
+**如果您开发的是Jar插件，并调用了我们提供给您的一些API，那么这种情况您可能需要设置兼容的版本，您可以在我们打印的日志中看到兼容的版本号。**
 
-| field      | type | required | explanation                     | example    |
-|------------|------|----------|---------------------------------|------------|
-| sinceBuild | Int  | yes      | minimum compatible build number | 0          |
-| untilBuild | Int  | yes      | maximum compatible build number | 2147483647 |
+| 字段         | 类型  | 必填 | 说明       | 示例         |
+|------------|-----|----|----------|------------|
+| sinceBuild | Int | 是  | 兼容的最小构建号 | 0          |
+| untilBuild | Int | 是  | 兼容的最大构建号 | 2147483647 |
 
 
 ### Vendor
 
-| field    | type   | required | explanation   | example               |
-|----------|--------|----------|---------------|-----------------------|
-| name     | String | yes      | user name     | "MyRest"              |
-| email    | String | no       | user email    |                       |
-| homepage | String | no       | user homepage | "https://example.com" |
+| 字段       | 类型     | 必填 | 说明   | 示例                    |
+|----------|--------|----|------|-----------------------|
+| name     | String | 是  | 用户名  | "MyRest"              |
+| email    | String | 否  | 电子邮箱 |                       |
+| homepage | String | 否  | 个人主页 | "https://example.com" |
 
-### Depend On Plugin
+### DependOnPlugin
 
-| field    | type    | required | explanation                                    | example              |
-|----------|---------|----------|------------------------------------------------|----------------------|
-| id       | String  | yes      | plugin id                                      | "com.example.plugin" |
-| optional | Boolean | no       | the depends plugin is required                 | true                 |
+| 字段       | 类型      | 必填 | 说明   | 示例                   |
+|----------|---------|----|------|----------------------|
+| id       | String  | 是  | 插件ID | "com.example.plugin" |
+| optional | Boolean | 否  | 是否可选 | true                 |
 
 ### Group
 
-| field        | type   | required | explanation            | example |
-|--------------|--------|----------|------------------------|---------|
-| id           | String | yes      | group id               |         |
-| nameBundleId | String | yes      | the language bundle id |         |
+| 字段           | 类型     | 必填 | 说明        | 示例 |
+|--------------|--------|----|-----------|----|
+| id           | String | 是  | 分组Id      |    |
+| nameBundleId | String | 是  | 名称的资源绑定ID |    |
 
-### Action Keyword Props
+### ActionKeywordProps
 
-| field                | type                                       | required | explanation                                                                                     | example            |
-|----------------------|--------------------------------------------|----------|-------------------------------------------------------------------------------------------------|--------------------|
-| pinName              | String                                     | no       | if the action support pin, you need set a pin name                                              |                    |
-| nameBundleId         | String                                     | no       | the language bundle id, we suggest you set this value                                           |                    |
-| logo                 | String                                     | no       | logo file path                                                                                  | "./logos/logo.png" |
-| placeholderBundleId  | String                                     | no       | the language bundle id, the value will as a placeholder show in action input field after pinned |                    |
-| groupId              | String                                     | no       | grouping action, see [group](#group)                                                            |                    |
-| toolbar              | String                                     | no       | the toolbar class name, only in jar plugin                                                      |                    |
-| descriptionBundleId  | String                                     | no       | the language bundle id                                                                          |                    |
-| unsupportedPlatforms | List<Enum<[PlatformType](#platform-type)>> | no       | the action unsupported platforms                                                                |                    |
-| keywords             | List\<String\>                             | yes      | keywords of the action                                                                          | - "keyword"        |
-| handler              | String                                     | yes      | handler of the action                                                                           |                    |
+| 字段                   | 类型                                        | 必填 | 说明                 | 示例                 |
+|----------------------|-------------------------------------------|----|--------------------|--------------------|
+| pinName              | String                                    | 否  | 固定的名称              |                    |
+| nameBundleId         | String                                    | 否  | 名称的资源绑定ID，我们建议设置此值 |                    |
+| logo                 | String                                    | 否  | logo路径             | "./logos/logo.png" |
+| placeholderBundleId  | String                                    | 否  | 占位符的资源绑定ID         |                    |
+| groupId              | String                                    | 否  | 分组，查看[分组](#group)  |                    |
+| toolbar              | String                                    | 否  | 工具栏，仅Jar插件可用       |                    |
+| descriptionBundleId  | String                                    | 否  | 描述的资源绑定ID          |                    |
+| unsupportedPlatforms | List<Enum<[PlatformType](#platformtype)>> | 否  | 不支持的操作系统           |                    |
+| keywords             | List\<String\>                            | 是  | 关键字                | - "keyword"        |
+| handler              | String                                    | 是  | 处理器                |                    |
 
-### Named Service
+### NamedService
 
-| field        | type   | required | explanation        | example |
-|--------------|--------|----------|--------------------|---------|
-| service      | String | yes      | a service          |         |
-| nameBundleId | String | yes      | language bundle id |         |
+| 字段           | 类型     | 必填 | 说明     | 示例 |
+|--------------|--------|----|--------|----|
+| service      | String | 是  | 类名     |    |
+| nameBundleId | String | 是  | 资源绑定ID |    |
 
-### Placeholder Updater
+### PlaceholderUpdater
 
-| field       | type   | required | explanation           | example |
-|-------------|--------|----------|-----------------------|---------|
-| updater     | String | yes      | a placeholder updater |         |
-| previewText | String | yes      | preview text          |         |
+| 字段          | 类型     | 必填 | 说明    | 示例 |
+|-------------|--------|----|-------|----|
+| updater     | String | 是  | 更新占位符 |    |
+| previewText | String | 是  | 预览文本  |    |
 
-### Customize Loader
+### 自定义加载器
 
-**If you set the value other than the following, we will use this value to create a class loader you customized.**
+**如果您设置的不是下面的值，那么我们将用这个值作为您自定义类加载器的名称。**
 
-| special value | explanation                                                                                    |
-|---------------|------------------------------------------------------------------------------------------------|
-| default       | use default class loader to load jar                                                           |
-| isolate       | load jar using an isolated class loader                                                        |
-| commandline   | as a general plugin, interactive using command                                                 |
-| http          | as a general plugin, interactive using http post request                                       |
-| python        | as a general plugin, interactive using python                                                  |
-| qlexpress     | as a general plugin, interactive using [qlexpress](https://github.com/alibaba/QLExpress)       |
+| 特殊值         | 说明                                                       |
+|-------------|----------------------------------------------------------|
+| default     | 默认的类加载器                                                  |
+| isolate     | 隔离的类加载器                                                  |
+| commandline | 作为终端命令的通用插件                                              |
+| http        | 作为HTTP类型的通用插件，我们将POST方法请求您                               |
+| python      | 作为Python脚本的通用插件                                          |
+| qlexpress   | 作为[qlexpress](https://github.com/alibaba/QLExpress)的通用插件 |
 
 ### Category
 
-| name          | explanation                             |
-|---------------|-----------------------------------------|
-| THEME         | provided theme                          |
-| PRODUCTIVITY  | some functions about productivity       |
-| LANGUAGE      | some functions about spoken language    |
-| DEVELOP_TOOL  | some functions about program developing |
-| MEDIA         | some functions about media              |
-| SECURITY      | some functions about security           |
-| SEARCHING     | some functions about data retrieval     |
-| GAME          | game                                    |
-| NEWS          | news                                    |
-| ENTERTAINMENT | some functions about entertainment      |
-| ACTION_WINDOW | provided action window                  |
-| OTHERS        | any others                              |
+| 名称            | 说明   |
+|---------------|------|
+| THEME         | 主题   |
+| PRODUCTIVITY  | 效率   |
+| LANGUAGE      | 自然语言 |
+| DEVELOP_TOOL  | 开发工具 |
+| MEDIA         | 媒体   |
+| SECURITY      | 安全   |
+| SEARCHING     | 搜索   |
+| GAME          | 游戏   |
+| NEWS          | 新闻   |
+| ENTERTAINMENT | 娱乐   |
+| ACTION_WINDOW | 工作窗口 |
+| OTHERS        | 其他   |
 
-## Platform Type
+## PlatformType
 
-| name    | explanation          |
-|---------|----------------------|
-| WINDOWS | the windows platform |
-| MACOS   | the macos platform   |
-| LINUX   | ths linux platform   |
+| 名称      | 说明        |
+|---------|-----------|
+| WINDOWS | Windows系统 |
+| MACOS   | MacOS系统   |
+| LINUX   | Linux系统   |
 
-### Yaml Example
+### Yaml示例
 
 ```yaml
 id: com.example.plugin

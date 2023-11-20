@@ -1,6 +1,6 @@
 # QLExpress
 
-**Default Imported Packages:** you don't need to import these packages again, just use the classes in the imported package directly.
+**默认导入的包：** 您不需要再导入这些包，您可以直接使用这些包下面的类。
 
 ```java
 import java.lang;
@@ -17,15 +17,15 @@ import cn.hutool.core.util;
 import cn.hutool.http;
 ```
 
-**Builtin Bind Methods**
+**内置的方法**
 
-| method                | return type    | explanation                                 | example                                                  |
-|-----------------------|----------------|---------------------------------------------|----------------------------------------------------------|
-| listof(Object...)     | List\<Object\> | create a list                               | list=listof(1,2,3,"a");                                  |
-| nullto(Object,Object) | Object         | if first value is null, return second value | a_null_value=null;value=nullto(a_null_value,"not_null"); |
-| List.avg()            | Double         | list extension method                       | avg=listof(1,2,3,4,5).avg();                             |
-| String.repeat(Int)    | String         | string extension method                     | value="a".repeat(9);                                     |
+| 方法                    | 返回类型           | 说明                  | 示例                                                       |
+|-----------------------|----------------|---------------------|----------------------------------------------------------|
+| listof(Object...)     | List\<Object\> | 创建一个list            | list=listof(1,2,3,"a");                                  |
+| nullto(Object,Object) | Object         | 如果第一个值为null，那么返回第二个 | a_null_value=null;value=nullto(a_null_value,"not_null"); |
+| List.avg()            | Double         | 扩展list的方法           | avg=listof(1,2,3,4,5).avg();                             |
+| String.repeat(Int)    | String         | 扩展string的方法         | value="a".repeat(9);                                     |
 
-> [**Learn Hutool**](https://hutool.cn)
+> [**了解Hutool**](https://hutool.cn)
 
-> [**Learn QLExpress**](https://github.com/alibaba/QLExpress)
+> [**了解QLExpress**](https://github.com/alibaba/QLExpress)

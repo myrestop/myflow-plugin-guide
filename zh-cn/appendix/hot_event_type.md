@@ -1,10 +1,10 @@
-# Hot Event Type
+# HotEventType
 
-| name                 | explanation            |
-|----------------------|------------------------|
-| SCREEN_CORNER        | hot corner             |
-| CRON                 | cron express           |
-| HOTKEY               | hotkey                 |
-| MOUSE_LONG_CLICK     | mouse long click event |
-| ACTION_BOX           | action box             |
-| KEYWORD_DOUBLE_CLICK | keyword double click   |
+| 名称                   | 说明      |
+|----------------------|---------|
+| SCREEN_CORNER        | 触发角     |
+| CRON                 | cron表达式 |
+| HOTKEY               | 热键      |
+| MOUSE_LONG_CLICK     | 鼠标长按事件  |
+| ACTION_BOX           | 效率盒子    |
+| KEYWORD_DOUBLE_CLICK | 关键字双击事件 |

@@ -4,31 +4,31 @@
 
 ## 动作(Action)
 
-一个**动作**代表一个最小单位的功能，他基本由[关键字](#动作关键字action-keyword)和[处理器](#动作处理器action-handler)组成，程序会通过用户输入的关键字找到对应的**动作**，然后调用动作的处理器，处理器将返回一个结果列表给我们的[工作窗口](#工作窗口action-window)渲染。
+一个**动作**代表一个最小单位的功能，他基本由[关键字](#动作关键字actionkeyword)和[处理器](#动作处理器actionhandler)组成，程序会通过用户输入的关键字找到对应的**动作**，然后调用动作的处理器，处理器将返回一个结果列表给我们的[工作窗口](#工作窗口actionwindow)渲染。
 
-## 工作窗口(Action Window)
+## 工作窗口(ActionWindow)
 
-工作窗口是我们应用程序的主要窗口。**工作窗口**的主要工作是负责渲染[固定的关键字](#动作关键字action-keyword)、工具栏、工作窗口的固定状态、结果被执行的状态通知、[动作输入框](#工作输入框action-input-field)、[动作结果列表](#动作结果action-result)以及[动作结果回调](#动作结果回调action-result-callback)。
+工作窗口是我们应用程序的主要窗口。**工作窗口**的主要工作是负责渲染[固定的关键字](#动作关键字actionkeyword)、工具栏、工作窗口的固定状态、结果被执行的状态通知、[动作输入框](#动作输入框actioninputfield)、[动作结果列表](#动作结果actionresult)以及[动作结果回调](#动作结果回调actionresultcallback)。
 
-## 动作输入框(Action Input Field)
+## 动作输入框(ActionInputField)
 
-动作输入框是一个可输入的文本框，他的主要工作是获取用户键盘输入的内容，以及展示固定关键字的Logo，他是[**工作窗口**](#工作窗口action-window)的一部分。
+动作输入框是一个可输入的文本框，他的主要工作是获取用户键盘输入的内容，以及展示固定关键字的Logo，他是[**工作窗口**](#工作窗口actionwindow)的一部分。
 
-## 动作关键字(Action Keyword)
+## 动作关键字(ActionKeyword)
 
 动作关键字（我们也称“关键字”）指一个[**动作**](#动作action)的一个或多个关键字，我们要求关键字的长度不能超过32个字符。
 
-## 动作处理器(Action Handler)
+## 动作处理器(ActionHandler)
 
 您的功能代码将主要在**动作处理器**（我们也称“处理器”）这里，我们会将用户输入的内容解析成关键字和参数并传递给您的处理器，您需要处理我们的查询请求并返回一个结果列表。
 
-## 动作结果(Action Result)
+## 动作结果(ActionResult)
 
 动作结果是指您的处理器返回的结果列表，他的核心字段包括score、logo、title、subtitle、callbacks以及result（真实的运算结果）。
 
 > [动作结果字段解释](appendix/action_result.md#字段解释)
 
-## 动作结果回调(Action Result Callback)
+## 动作结果回调(ActionResultCallback)
 
 动作结果回调是指结果的具体执行方法，例如打开或复制结果等等，回调也是动作结果的一部分。
 
