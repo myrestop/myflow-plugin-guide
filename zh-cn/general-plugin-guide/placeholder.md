@@ -1,4 +1,4 @@
-# 占位符（Placeholder）
+# 占位符(Placeholder)
 
 In this section, we'll walk you through writing a random emoji string as the placeholder.
 

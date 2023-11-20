@@ -1,4 +1,4 @@
-# 监听器（Cycle Listener）
+# 监听器(CycleListener)
 
 If you want to listen your plugin state, you should add a cycle listener to `plugin-spec.yml` file. And we will pass the state to you use the `method` field explained in our [common fields explanation](appendix/json_rpc.md#the-request-parameter-common-fields).
 

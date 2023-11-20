@@ -1,4 +1,4 @@
-# 主题（Theme）
+# 主题(Theme)
 
 To provide a theme, you can create a theme json file, or respond [**theme as json**](appendix/theme.md#theme).
 

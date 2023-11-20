@@ -1,4 +1,4 @@
-# 动作（Action）
+# 动作(Action)
 
 In this section, we'll write an action that responds emojis.
 
