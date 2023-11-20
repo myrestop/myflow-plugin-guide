@@ -14,7 +14,7 @@
 
 [hello_runflow.json](../hello-runflow/hello_runflow.json ':include :type=code')
 
-> 了解这些字段的含义请查看[ActionResult](appendix/action_result.md#字段解释)。
+> 了解这些字段的含义请查看[动作结果(Action Result)](appendix/action_result.md#字段解释)。
 
 ## 创建插件配置文件
 
@@ -65,4 +65,4 @@
 
 ## 接下来做什么
 
-了解我们的[**名词解释**](conceptual_interpretation.md#名词解释)。
+了解我们的[**功能与设计**](conceptual_interpretation.md#功能与设计)。

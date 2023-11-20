@@ -26,7 +26,7 @@ RunFlow是一款可以通过插件来扩展功能的强大的效率工具，并�
 
 [**快速开始**](getting_started.md#快速开始)解释了如何编写一个“Hello RunFlow”插件，其中包括多语言支持和撰写插件描述，并且我们还将向您展示插件配置文件`plugin-spec.yml`中的一些核心字段。
 
-[**名词解释**](conceptual_interpretation.md#名词解释)涵盖了我们的主要功能和一些概念，这些都会很容易理解。
+[**功能与设计**](conceptual_interpretation.md#功能与设计)涵盖了我们的主要功能和一些概念，这些都会很容易理解。
 
 [**通用插件指南**](general-plugin-guide/general_guide.md#通用插件指南)向您展示了如何编写一个功能齐全的通用插件，包括ActionHandler、ThemeProvider、PlaceholderUpdater和插件CycleListener。
 

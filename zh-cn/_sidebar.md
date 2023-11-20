@@ -1,6 +1,6 @@
 - [简介](README.md#欢迎阅读我们的runflow插件开发指南 "RunFlow插件开发指南")
 - [**快速开始**](getting_started.md#快速开始 "RunFlow插件开发指南")
-- [**名词解释**](conceptual_interpretation.md#名词解释 "RunFlow插件开发指南")
+- [**功能与设计**](conceptual_interpretation.md#功能与设计 "RunFlow插件开发指南")
 - [**General Plugin**](general-plugin-guide/general_guide.md#general-plugin-guide "RunFlow插件开发指南")
   - [Cycle Listener](general-plugin-guide/cycle-listener.md#cycle-listener "RunFlow插件开发指南")
   - [**Action**](general-plugin-guide/action.md#action "RunFlow插件开发指南")

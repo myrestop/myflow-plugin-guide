@@ -40,4 +40,4 @@ Func page is your customized ui, it can open as a pinned keyword, if the functio
 
 ## What's Next
 
-[**Follow our tutorial to write a general fully functional plugin**](general-plugin-guide/general_guide.md#general-plugin-guide). Or [**write a jar plugin**](jar-plugin-guide/jar_guide.md#jar-plugin-guide).
+[**Follow our tutorial to write a general fully functional plugin**](general-plugin-guide/general_guide.md#general-plugin-guide), or [**write a jar plugin**](jar-plugin-guide/jar_guide.md#jar-plugin-guide).

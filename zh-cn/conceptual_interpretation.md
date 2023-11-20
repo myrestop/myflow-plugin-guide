@@ -1,43 +1,43 @@
-# 名词解释
+# 功能与设计
 
-This chapter will introduce you our main features and concepts, you will learn how to write a plugin with friendly experience. Wish you have a pleasant journey.
+本章将向您介绍RunFlow的主要功能和一些设计理论，希望您能从这里了解到如何编写一个具有友好体验的插件。祝您有一个愉快的阅读体验。
 
-## Action
+## 动作(Action)
 
-An **action** means a feature or function, it consists of [keywords](#action-keyword) and [handler](#action-handler), app will find the corresponding **action** through the user entered keyword, then call Action's handler, handler will return a result list to our for rendering on [Action Window](#action-window).
+一个**动作**代表一个最小单位的功能，他基本由[关键字](#动作关键字action-keyword)和[处理器](#动作处理器action-handler)组成，程序会通过用户输入的关键字找到对应的**动作**，然后调用动作的处理器，处理器将返回一个结果列表给我们的[工作窗口](#工作窗口action-window)渲染。
 
-## Action Window
+## 工作窗口(Action Window)
 
-Action Window is the main window of our app. **Action window** is responsible for rendering the pinned [keywords](#action-keyword), toolbars, Action Window pinned states, display notification of the result execution state, [text of user input](#action-input-field), list of the [Action Result](#action-result) and [Action Result Callbacks](#action-result-callback).
+工作窗口是我们应用程序的主要窗口。**工作窗口**的主要工作是负责渲染[固定的关键字](#动作关键字action-keyword)、工具栏、工作窗口的固定状态、结果被执行的状态通知、[动作输入框](#工作输入框action-input-field)、[动作结果列表](#动作结果action-result)以及[动作结果回调](#动作结果回调action-result-callback)。
 
-## Action Input Field
+## 动作输入框(Action Input Field)
 
-Action Input Field is a text field, it's work is to get the content what user typed and render the logo which user pinned keyword. It also is part of the [**action window**](#action-window).
+动作输入框是一个可输入的文本框，他的主要工作是获取用户键盘输入的内容，以及展示固定关键字的Logo，他是[**工作窗口**](#工作窗口action-window)的一部分。
 
-## Action Keyword
+## 动作关键字(Action Keyword)
 
-Action Keyword means the keywords of the [**action**](#action), we also call it keyword or keywords, and we require the keyword can't exceed 32 characters. An **action** can have multiple keywords.
+动作关键字（我们也称“关键字”）指一个[**动作**](#动作action)的一个或多个关键字，我们要求关键字的长度不能超过32个字符。
 
-## Action Handler
+## 动作处理器(Action Handler)
 
-In **action handler** (we also call it handler), your logic code will be here, we will pass the parsed keyword and parameter that user input to your handler, you need to process our query request and return results.
+您的功能代码将主要在**动作处理器**（我们也称“处理器”）这里，我们会将用户输入的内容解析成关键字和参数并传递给您的处理器，您需要处理我们的查询请求并返回一个结果列表。
 
-## Action Result
+## 动作结果(Action Result)
 
-Action Result is what your handler returns, it's core fields include score, logo, title, subtitle, callbacks and result (the real computed result).
+动作结果是指您的处理器返回的结果列表，他的核心字段包括score、logo、title、subtitle、callbacks以及result（真实的运算结果）。
 
-> [Action Result Fields Explanation](appendix/action_result.md#fields-explanation)
+> [动作结果字段解释](appendix/action_result.md#字段解释)
 
-## Action Result Callback
+## 动作结果回调(Action Result Callback)
 
-Action Result Callback refers the specific execution method of the result, for example copy it, or open it or any others. Callbacks are also part of the action result.
+动作结果回调是指结果的具体执行方法，例如打开或复制结果等等，回调也是动作结果的一部分。
 
-> [Action Result Callback Fields Explanation](appendix/action_result_callback.md#fields-explanation)
+> [动作结果回调字段解释](appendix/action_result_callback.md#字段解释)
 
-## Func Page
+## 工作页
 
-Func page is your customized ui, it can open as a pinned keyword, if the functions you want to provide require interact with graphics user interface, you need this feature, and this feature only available in [jar plugin](jar-plugin-guide/jar_guide.md#jar-plugin-guide). If you familiar with any JVM programming language, you can read [this section](jar-plugin-guide/func_page.md#func-page) to learn more about how to write a func page.
+工作页是您自定义的界面，他可以作为固定关键字打开，如果您提供的功能需要与用户图形界面交互，那么您需要通过工作页来实现，但此特性只能在[Jar插件](jar-plugin-guide/jar_guide.md#jar插件指南)下可用。如果您熟悉任何JVM类编程语言，您可以阅读[本节](jar-plugin-guide/func_page.md#func-page)来了解如何编写一个工作页。
 
-## What's Next
+## 接下来做什么
 
-[**Follow our tutorial to write a general fully functional plugin**](general-plugin-guide/general_guide.md#general-plugin-guide). Or [**write a jar plugin**](jar-plugin-guide/jar_guide.md#jar-plugin-guide).
+[**跟着我们的教程编写一个功能齐全的通用插件**](general-plugin-guide/general_guide.md#通用插件指南)，或者[**编写一个Jar插件**](jar-plugin-guide/jar_guide.md#jar插件指南)。
