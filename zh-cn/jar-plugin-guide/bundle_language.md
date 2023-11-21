@@ -1,34 +1,33 @@
 # Bundle Language To Bean
 
-**It's easy to bundle your language resources to java bean.**
+**将语言资源绑定到JavaBean是很简单的。**
 
-**If you don't config the bean class, we'll bundle to `LinkedHashMap`.**
+**如果您没有配置JavaBean类，我们将绑定到`LinkedHashMap`。**
 
-**Java Code**
+**Java代码**
 
-[JavaLanguageBundle.java](java-demo-plugin/src/main/java/runflow/JavaLanguageBundle.java ':include :type=code')
+[JavaLanguageBundle.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaLanguageBundle.java ':include :type=code')
 
-**Kotlin Code**
+**Kotlin代码**
 
-[KotlinLanguageBundle.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinLanguageBundle.kt ':include :type=code')
+[KotlinLanguageBundle.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinLanguageBundle.kt ':include :type=code')
 
+**添加语言资源**
 
-**Add Language Resource**
+`en_us.yml`位于`language`目录：
 
-`en_us.yml` locate in `language`:
+[en_us.yml](../../jar-plugin-guide/java-demo-plugin/language/en_us.yml ':include :type=code')
 
-[en_us.yml](java-demo-plugin/language/en_us.yml ':include :type=code')
+`zh_cn.yml`位于`language`目录：
 
-`zh_cn.yml` locate in `language`:
+[zh_cn.yml](../../jar-plugin-guide/java-demo-plugin/language/zh_cn.yml ':include :type=code')
 
-[zh_cn.yml](java-demo-plugin/language/zh_cn.yml ':include :type=code')
+**绑定到Bean**
 
-**Bundle To Bean**
-
-By configuring `plugin-spec.yml`, If you don't config the bean class, we'll bundle to `LinkedHashMap`.
+配置到`plugin-spec.yml`，如果您没有配置JavaBean类，我们将绑定到`LinkedHashMap`。
 
 ```yaml
 language-bundle-name: runflow.KotlinLanguageBundle
 ```
 
-> To bundle to bean, the field `languageType` and `INSTANCE` is required, and if the bundle id has default value for current language type, you don't write the language resource file, like this example, we don't need `en_us.yml` in fact.
+> 绑定到JavaBean时，字段`languageType`和`INSTANCE`是必须的，如果当前语言类型的绑定ID有默认的值，那么您不需要新建当前语言的资源文件，比如本示例中，我们其实可以不用创建`en_us.yml`文件。

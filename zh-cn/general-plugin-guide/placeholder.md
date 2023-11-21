@@ -1,40 +1,40 @@
 # 占位符(Placeholder)
 
-In this section, we'll walk you through writing a random emoji string as the placeholder.
+在本节中，我们将带您写一个随机字符串的占位符。
 
-## Writing Placeholder
+## 编写占位符
 
 <!-- tabs:start -->
 
 #### **Commandline**
 
-In this example, you should build an executable binary file or write an executable shell script, you can get an argument from commandline.
+在本示例中，您需要构建一个可执行的二进制文件或编写一个可执行的shell脚本，您可以从命令行获取参数。
 
-And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/src/nativeMain/kotlin/Main.kt) in [**commandline demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin).
+您也可以参考位于我们项目[**CommandlineDemoPlugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin)的[**示例代码**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/src/nativeMain/kotlin/Main.kt)。
 
 #### **HTTP**
 
-In this example, you need expose an endpoint `/placeholder` in your web server, we'll use post method to request you.
+在本示例中，您需要在您服务器端公开一个`/placeholder`的接口，我们将会post方法请求这个接口。
 
-And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin/src/main/kotlin/runflow/Main.kt) in [**http demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin).
+您也可以参考位于我们项目[**HttpDemoPlugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin)的[**示例代码**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin/src/main/kotlin/runflow/Main.kt)。
 
 #### **Python**
 
-In this example we create a placeholder file named `placeholder.py`, and writing the following content:
+在本示例中，我们将创建一个名为`placeholder.py`的文件，并写入以下内容：
 
-[placeholder.py](python-demo-plugin/placeholder.py ':include :type=code')
+[placeholder.py](../../general-plugin-guide/python-demo-plugin/placeholder.py ':include :type=code')
 
 #### **QLExpress**
 
-In this example we create a placeholder file named `placeholder.qlexpress`, and writing the following content:
+在本示例中，我们将创建一个名为`placeholder.qlexpress`的文件，并写入以下内容：
 
-[placeholder.qlexpress](qlexpress-demo-plugin/placeholder.qlexpress ':include :type=code java')
+[placeholder.qlexpress](../../general-plugin-guide/qlexpress-demo-plugin/placeholder.qlexpress ':include :type=code java')
 
 <!-- tabs:end -->
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到文件`plugin-spec.yml`：
 
 <!-- tabs:start -->
 

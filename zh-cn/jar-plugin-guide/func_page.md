@@ -1,12 +1,12 @@
 # Func Page
 
-To write a func page, please make sure you are familiar with [**Jetpack Compose**](https://developer.android.com/jetpack/compose/documentation).
+要编写工作页，请确保您熟悉[**JetpackCompose**](https://developer.android.com/jetpack/compose/documentation)。
 
-To open the func page also depends on the action, the codes like the following:
+打开工作页也是依赖动作的，代码如下：
 
-[KotlinFuncPage.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinFuncPage.kt ':include :type=code')
+[KotlinFuncPage.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinFuncPage.kt ':include :type=code')
 
-Config to `plugin-spec.yml`:
+配置`plugin-spec.yml`：
 
 ```yaml
 actions:
@@ -16,37 +16,37 @@ actions:
     handler: runflow.KotlinFuncPage
 ```
 
-## Action Keyword Func Page Content Result
+## ActionKeywordFuncPageContentResult
 
-| field               | type                 | require | explanation                                  | example            |
-|---------------------|----------------------|---------|----------------------------------------------|--------------------|
-| logo                | Object               | yes     | the logo, type can be String, Image, Painter | "./logos/logo.png" |
-| height              | Int                  | yes     | init height                                  | 600                |
-| nameBundleId        | String               | yes     | name bundled id                              | "app-name"         |
-| pinName             | String               | yes     | pin name                                     | "Demo"             |
-| initSelect          | Boolean              | no      | init select                                  | true               |
-| arg                 | Object               | no      | arguments                                    | null               |
-| placeholderBundleId | String               | no      | placeholder bundled id                       | "app-name"         |
-| toolbar             | ActionKeywordToolbar | no      | func page toolbar                            | null               |
-| hideActionTextField | Boolean              | no      | hide action text input field                 | false              |
-| content             | @Composable          | yes     | func page content                            |                    |
+| 字段                  | 类型                   | 必填 | 说明                            | 示例                 |
+|---------------------|----------------------|----|-------------------------------|--------------------|
+| logo                | Object               | 是  | logo，可以是string，image，或painter | "./logos/logo.png" |
+| height              | Int                  | 是  | 初始的高度                         | 600                |
+| nameBundleId        | String               | 是  | 名称的资源绑定ID                     | "app-name"         |
+| pinName             | String               | 是  | 固定名称                          | "Demo"             |
+| initSelect          | Boolean              | 否  | 初始化时打开                        | true               |
+| arg                 | Object               | 否  | 参数                            | null               |
+| placeholderBundleId | String               | 否  | 占位符的资源绑定ID                    | "app-name"         |
+| toolbar             | ActionKeywordToolbar | 否  | 工具栏                           | null               |
+| hideActionTextField | Boolean              | 否  | 隐藏动作输入框                       | false              |
+| content             | @Composable          | 是  | 工作页界面                         |                    |
 
-## Func Page Scope
+## FuncPageScope
 
-| field | type                                                                  | explanation    |
-|-------|-----------------------------------------------------------------------|----------------|
-| pin   | [ActionKeywordPin](appendix/action_keyword_pin.md#action-keyword-pin) | current pin    |
-| arg   | Object                                                                | your given arg |
+| 字段  | 类型                                                                  | 说明       |
+|-----|---------------------------------------------------------------------|----------|
+| pin | [ActionKeywordPin](appendix/action_keyword_pin.md#actionkeywordpin) | 当前固定的关键字 |
+| arg | Object                                                              | 您传递的参数   |
 
-| method                                                              | explanation                                  |
-|---------------------------------------------------------------------|----------------------------------------------|
-| Modifier.removeStateCacheOnUnpin()                                  | remove state chache for this func page score |
-| Modifier.onActionTextChanged(onEvent: (param: ActionParam) -> Unit) | action changed event                         |
-| Modifier.onFileChooserRequest(onEvent: () -> Unit)                  | request open file chooser                    |
-| Modifier.onActionWindowShow(onEvent: () -> Unit)                    | action window showed event                   |
+| 方法                                                                  | 说明        |
+|---------------------------------------------------------------------|-----------|
+| Modifier.removeStateCacheOnUnpin()                                  | 删除缓存      |
+| Modifier.onActionTextChanged(onEvent: (param: ActionParam) -> Unit) | 动作文本更新事件  |
+| Modifier.onFileChooserRequest(onEvent: () -> Unit)                  | 请求打开文件选择器 |
+| Modifier.onActionWindowShow(onEvent: () -> Unit)                    | 工作窗口显示事件  |
 
-## Remember For Func Page
+## 工作页里的Remember
 
-In [jetpack compose](https://developer.android.com/jetpack/compose/documentation) you use the syntax `var value by remeber {}` to cache a state until the composition is destroyed, but when user switch the pinned keyword, the current composition is disposed in fact.
+在[JetpackCompose](https://developer.android.com/jetpack/compose/documentation)中，您可以使用语法`var value by remeber {}`来缓存一个状态，直到组合被销毁，但是这里，当用户切换固定的关键字之后，实质上组合已经被销毁了。
 
-So we need to cache the state through the whole FuncPage's life cycle, by using the same syntax `var value by remember4FuncPage {}`, the method `remember4FuncPage` is located in `top.myrest.myflow.component.Composes`.
+因此我们需要使用相同的语法`var value by remember4FuncPage {}`在整个工作页的生命周期缓存状态，方法`remember4FuncPage`位于`top.myrest.myflow.component.Composes`。

@@ -1,10 +1,10 @@
-# Translator
+# 翻译
 
-To implement a language translator, you can implement our `top.myrest.myflow.language.Translator` interface class, like this:
+要实现语言翻译，您可以实现我们的`top.myrest.myflow.language.Translator`接口，代码如下：
 
-[JavaTranslator.java](java-demo-plugin/src/main/java/runflow/JavaTranslator.java ':include :type')
+[JavaTranslator.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaTranslator.java ':include :type')
 
-Then, config to `plugin-spec.yml`:
+然后，添加到文件`plugin-spec.yml`：
 
 ```yaml
 translator:
@@ -12,4 +12,4 @@ translator:
   name-bundle-id: Demo Translator
 ```
 
-> See [language codes](appendix/language_code.md#language-code).
+> 了解[语言编码](appendix/language_code.md#语言编码)。

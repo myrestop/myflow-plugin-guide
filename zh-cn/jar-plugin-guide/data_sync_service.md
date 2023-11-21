@@ -1,16 +1,16 @@
-# Data Sync Service
+# 数据同步服务
 
-First we want to say sorry in this section, we haven't a good example to you, but we'll also explain to you how to write a data sync service.
+首先，在本节中我们要说句抱歉，我们没有一个很好的示例展示给您，但是我们仍然会向您解释如何编写数据同步服务。
 
-## Writing Synchronization Service
+## 编写数据同步服务
 
-Create a kotlin file named `KotlinSyncService.kt` locate in `src/main/kotlin/runflow`, you can read our explanation in code comments:
+在`src/main/kotlin/runflow`目录下创建一个名为`KotlinSyncService.kt`的文件，我们会在代码注释中向您解释如何编写数据同步服务：
 
-[KotlinSyncService.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinSyncService.kt ':include :type=code')
+[KotlinSyncService.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinSyncService.kt ':include :type=code')
 
-## Adding To Specification File
+## 添加到配置文件
 
-After you coding finished, add the following content to `plugin-spec.yml`:
+添加下面内容到文件`plugin-spec.yml`：
 
 ```yaml
 data-sync-services:

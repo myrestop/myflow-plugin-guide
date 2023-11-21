@@ -1,10 +1,10 @@
 # 监听器(CycleListener)
 
-If you want to listen your plugin state, you should add a cycle listener to `plugin-spec.yml` file. And we will pass the state to you use the `method` field explained in our [common fields explanation](appendix/json_rpc.md#the-request-parameter-common-fields).
+如果您想监听插件的加载状态，您可以在`plugin-spec.yml`文件中添加一个监听器。我们将通过在[JsonRpc请求公共字段](appendix/json_rpc.md#jsonrpc请求的公共字段)解释中的`method`字段将状态传递给您。
 
-In `BEFORE_PLUGIN_LOAD` and `AFTER_PLUGIN_LOADED` two request methods, we'll pass the plugin location path to you by putting into `body` field, otherwise no other parameters. 
+在`BEFORE_PLUGIN_LOAD`和`AFTER_PLUGIN_LOADED`这两个请求方法中, 我们会把插件所在的路径放入`body`字段中传递给您，其他的请求方法没有任何参数。
 
-Request example json:
+请求的Json示例：
 
 ```json
 {
@@ -15,43 +15,43 @@ Request example json:
 }
 ```
 
-## Writing Cycle Listener
+## 编写监听器
 
 <!-- tabs:start -->
 
 #### **Commandline**
 
-In this example, you should build an executable binary file or write an executable shell script, you can get an argument from commandline.
+在本示例中，您需要构建一个可执行的二进制文件或编写一个可执行的shell脚本，您可以从命令行获取参数。
 
-And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/src/nativeMain/kotlin/Main.kt) in [**commandline demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin).
+您也可以参考位于我们项目[**CommandlineDemoPlugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin)的[**示例代码**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/src/nativeMain/kotlin/Main.kt)。
 
 #### **HTTP**
 
-In this example, you need expose an endpoint `/cycle-listener` in your web server, we'll use post method to request you.
+在本示例中，您需要在您服务器端公开一个`/cycle-listener`的接口，我们将会post方法请求这个接口。
 
-And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin/src/main/kotlin/runflow/Main.kt) in [**http demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin).
+您也可以参考位于我们项目[**HttpDemoPlugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin)的[**示例代码**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin/src/main/kotlin/runflow/Main.kt)。
 
 #### **Python**
 
-In this example we create a listener file named `cycle_listener.py`, and writing the following content:
+在本示例中，我们需要创建一个名为`cycle_listener.py`的监听文件，并写入以下内容：
 
-[cycle_listener.py](python-demo-plugin/cycle_listener.py ':include :type=code')
+[cycle_listener.py](../../general-plugin-guide/python-demo-plugin/cycle_listener.py ':include :type=code')
 
 #### **QLExpress**
 
-In this example we create a listener file named `cycle_listener.qlexpress`, and writing the following content:
+在本示例中，我们需要创建一个名为`cycle_listener.qlexpress`的监听文件，并写入以下内容：
 
-[cycle_listener.qlexpress](qlexpress-demo-plugin/cycle_listener.qlexpress ':include :type=code java')
+[cycle_listener.qlexpress](../../general-plugin-guide/qlexpress-demo-plugin/cycle_listener.qlexpress ':include :type=code java')
 
 <!-- tabs:end -->
 
-At `BEFORE_PLUGIN_LOAD` method request, you can return the [**plugin state**](appendix/plugin_state.md#plugin-state) to tell us whether to load your plugin, if you return the state is not `RUNNING`, we do not load your plugin.
+在`BEFORE_PLUGIN_LOAD`方法请求时，您可以返回一个[**插件状态**](appendix/plugin_state.md#pluginstate)来告诉我们是否加载您的插件，如果返回的状态不是`RUNNING`，我们就不会加载您的插件。
 
-> In actual development, you can do a lot of other things as needed.
+> 在实际开发过程中，您可以根据需要做很多其他的工作。
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到文件`plugin-spec.yml`：
 
 <!-- tabs:start -->
 

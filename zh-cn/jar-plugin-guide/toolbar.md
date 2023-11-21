@@ -1,10 +1,10 @@
 # Toolbar
 
-Toolbar is the part of the action, and make sure you are familiar with [**Jetpack Compose**](https://developer.android.com/jetpack/compose/documentation). To provide a toolbar on action you should implement class `top.myrest.myflow.component.ActionKeywordToolbar`, and here we use kotlin to give an example:
+工具栏是动作的一部分，实现工具栏请确保您已熟悉[**JetpackCompose**](https://developer.android.com/jetpack/compose/documentation)。要编写一个动作的工具栏，您需要实现`top.myrest.myflow.component.ActionKeywordToolbar`接口，这里我们使用Kotlin给出示例：
 
-[KotlinToolbar.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinToolbar.kt ':include :type=code')
+[KotlinToolbar.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinToolbar.kt ':include :type=code')
 
-To config `plugin-spec.yml`, you should config the item `toolbar: runflow.KotlinToolbar` to the specific [action](jar-plugin-guide/action.md#kotlin-action), like this:
+要配置`plugin-spec.yml`文件，您可以将`toolbar: runflow.KotlinToolbar`添加到指定[动作](jar-plugin-guide/action.md#kotlin-action)下面，像这样：
 
 ```yaml
 actions:

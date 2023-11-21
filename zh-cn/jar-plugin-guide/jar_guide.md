@@ -1,26 +1,26 @@
 # Jar插件指南
 
-In this tutorial, you'll learn how to write a jar plugin on JVM, we'll use both **Java** and **Kotlin** to program this demo plugin. **And we'll discuss more advanced features, so you can choose some you needed parts to read, other parts can be read at any time later.**
+在本教程中，您将学习如何在JVM上编写我们的Jar插件，我们将用**Java**和**Kotlin**来演示这个插件。**在这里我们将讨论许多进阶功能，因此您可以选择您感兴趣的部分阅读，其他部分可以之后随时阅读。**
 
-> **We strongly recommend programing in kotlin.**
+> **我们强烈建议您使用Kotlin编程。**
 
-## Creating Project
+## 创建项目
 
-First step, we need to use [intellij idea](https://www.jetbrains.com/idea) to create a java project named `java-demo-plugin` using [gradle](https://gradle.org) as the build tool, **and the jdk version we require 17+**, choosing kotlin as gradle dsl.
+首页，我们需要用[IntellijIdea](https://www.jetbrains.com/idea)创建一个名为`java-demo-plugin`使用[Gradle](https://gradle.org)作为构建工具的Java项目，**并且我们要求JDK版本不低于17**，使用Kotlin作为GradleDSL语言。
 
-`settings.gradle.kts` content as follows:
+`settings.gradle.kts`内容如下：
 
-[settings.gradle.kts](java-demo-plugin/settings.gradle.kts ':include :type=code kotlin')
+[settings.gradle.kts](../../jar-plugin-guide/java-demo-plugin/settings.gradle.kts ':include :type=code kotlin')
 
-`build.gradle.kts` content as follows:
+`build.gradle.kts`内容如下：
 
-[build.gradle.kts](java-demo-plugin/build.gradle.kts ':include :type=code kotlin')
+[build.gradle.kts](../../jar-plugin-guide/java-demo-plugin/build.gradle.kts ':include :type=code kotlin')
 
-> Refer our [kotlin gradle template](https://github.com/myrestop/myflow-plugin-gradle-template).
+> 参考我们的[KotlinGradle模板项目](https://github.com/myrestop/myflow-plugin-gradle-template)。
 
-## Creating Plugin Specification File
+## 新建配置文件
 
-Create `plugin-spec.yml` in project directory, writing content as follows:
+在项目目录下创建名为`plugin-spec.yml`的文件，并写入以下内容：
 
 ```yaml
 id: runflow.java
@@ -33,46 +33,46 @@ compatible-version:
   until-build: 2147483647
 ```
 
-## Adding MainTest Class For Developing And Testing
+## 创建MainTest类用于开发与测试
 
-Create a `MainTest.java` file locate in `src/test/java`, the codes like following:
+在目录`src/test/java`下创建一个名为`MainTest.java`的类，其代码大致如下：
 
-[MainTest.java](java-demo-plugin/src/test/java/MainTest.java ':include :type=code')
+[MainTest.java](../../jar-plugin-guide/java-demo-plugin/src/test/java/MainTest.java ':include :type=code')
 
-**Run** `MainTest`, you'll see the action window, here is no any plugins, even no builtin plugin, **it's simple and base implemented only, just for plugin developing and testing**.
+**运行**`MainTest`，你将会看到工作窗口，注意这里没有任何插件，甚至没有内置插件，**这是一个很简单只有基本实现的窗口，仅用于插件开发和测试**。
 
-> [This sample full codes](https://github.com/myrestop/myflow-plugin-guide/tree/master/jar-plugin-guide/java-demo-plugin).
+> [本案例全部代码](https://github.com/myrestop/myflow-plugin-guide/tree/master/jar-plugin-guide/java-demo-plugin)。
 
-## Writing Functions
+## 编写功能
 
-- [**Cycle Listener**](jar-plugin-guide/cycle_listener.md#cycle-listener) interprets how to listen plugin loading state.
+- [**监听器(CycleListener)**](jar-plugin-guide/cycle_listener.md#监听器cyclelistener)解释了如果监听插件的加载状态。
 
-- [**Action**](jar-plugin-guide/action.md#action) interprets how to write a general action, and an action of customized ui.
+- [**动作(Action)**](jar-plugin-guide/action.md#动作action)解释了如何写一个通用和一个可以自定义界面的动作。
 
-- [**Placeholder**](jar-plugin-guide/placeholder.md#placeholder) interprets how to update our placeholder.
+- [**占位符(Placeholder)**](jar-plugin-guide/placeholder.md#占位符placeholder)解释了如果更新占位符。
 
-- [**Theme**](jar-plugin-guide/theme.md#theme) interprets how to update our theme.
+- [**主题(Theme)**](jar-plugin-guide/theme.md#主题theme)解释了如何更新主题。
 
-- [**Action Callback Extension**](jar-plugin-guide/callback_extension.md#action-callback-extension) interprets how to extend action callbacks.
+- [**扩展动作回调**](jar-plugin-guide/callback_extension.md#扩展动作回调)解释了如何扩展动作的回调。
 
-- [**Storing Data**](jar-plugin-guide/data_store.md#storing-data) interprets how to store data by using our builtin database, and some requirements.
+- [**数据存储**](jar-plugin-guide/data_store.md#数据存储)解释了如何使用我们内置的数据库存储数据。
 
-- [**Data Encryptor**](jar-plugin-guide/data_encryptor.md#data-encryptor) interprets how to provide data encryptors for data sync service.
+- [**数据加密器**](jar-plugin-guide/data_encryptor.md#数据加密器)解释了如何为数据同步服务提供数据加密的功能。
 
-- [**Data Sync Service**](jar-plugin-guide/data_sync_service.md#data-sync-service) interprets how to provide data sync methods for user.
+- [**数据同步服务**](jar-plugin-guide/data_sync_service.md#数据同步服务)解释了如何提供数据同步服务。
 
-- [**Translator**](jar-plugin-guide/translator.md#translator) interprets how to provide language translator for user to translate bundled language resources.
+- [**翻译**](jar-plugin-guide/translator.md#翻译)解释如何为绑定的语言资源文件提供翻译。
 
-- [**Action Focused Mode**](jar-plugin-guide/focused_mode.md#action-focused-mode) interprets how to write an action that supports focused mode.
+- [**动作专注模式**](jar-plugin-guide/focused_mode.md#动作专注模式)解释了如何让一个动作支持专注模式。
 
-- [**Toolbar**](jar-plugin-guide/toolbar.md#toolbar) interprets how to write a toolbar.
+- [**工具栏**](jar-plugin-guide/toolbar.md#工具栏)解释了如何提供一个工具栏。
 
-- [**Func Page**](jar-plugin-guide/func_page.md#func-page) interprets how to write a func page with gui.
+- [**工作页**](jar-plugin-guide/func_page.md#工作页)解释了如何实现一个自定义的界面。
 
-- [**Action Window**](jar-plugin-guide/action_window.md#action-window) interprets how to replace our action window.
+- [**工作窗口(ActionWindow)**](jar-plugin-guide/action_window.md#工作窗口actionwindow)解释了如何替换我们的工作窗口。
 
-- [**Http Service**](jar-plugin-guide/http_service.md#http-service) interprets how to use our builtin http service to expose endpoint.
+- [**Http服务**](jar-plugin-guide/http_service.md#http服务)解释了如何使用我们内置的http服务来公开接口。
 
-- [**Bundle Language**](jar-plugin-guide/bundle_language.md#bundle-language-to-bean) interprets how to bundle language resource to java bean.
+- [**绑定语言**](jar-plugin-guide/bundle_language.md#绑定语言)解释了如何将语言资源绑定到JavaBean。
 
-- [**Utilities**](jar-plugin-guide/utilities.md#utilities) interprets all the useful classes, methods and fields.
+- [**实用工具**](jar-plugin-guide/utilities.md#utilities)解释了所有常用的类、方法和字段。

@@ -1,16 +1,16 @@
-# Theme
+# 主题(Theme)
 
-In this section, we’ll implement a simple random theme provider.
+在本节中，我们将实现一个简单的随机主题。
 
-## Writing Theme
+## 编写主题
 
-Create a kotlin file named `KotlinTheme.kt` locate in `src/main/kotlin/runflow`, and writing the following content:
+在`src/main/kotlin/runflow`目录下创建一个名为`KotlinTheme.kt`的文件，并写入以下内容：
 
-[KotlinTheme.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinTheme.kt ':include :type=code')
+[KotlinTheme.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinTheme.kt ':include :type=code')
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到文件`plugin-spec.yml`：
 
 ```yaml
 themes:
@@ -18,4 +18,4 @@ themes:
     name-bundle-id: Demo Theme
 ```
 
-> Read [**theme explanation**](appendix/theme.md#theme).
+> 了解[**主题解释**](appendix/theme.md#theme)。

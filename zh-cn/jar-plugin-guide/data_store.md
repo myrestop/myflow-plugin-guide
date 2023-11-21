@@ -1,19 +1,19 @@
-# Storing Data
+# 存储数据
 
-In this section, you'll learn how to store data.
+在本节，您将了解如何存储数据。
 
-## Creating Document
+## 创建Document
 
-In this tutorial, we create an auto increment document named `JavaDoc.java` locate in `src/main/java/runflow`, the content like following:
+在目录`src/main/java/runflow`下创建一个名为`JavaDoc.java`的自增Document，并写入以下内容：
 
-[JavaDoc.java](java-demo-plugin/src/main/java/runflow/JavaDoc.java ':include :type=code')
+[JavaDoc.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaDoc.java ':include :type=code')
 
-> In parent class `top.myrest.myflow.db.AutoIncrementDoc`, it has two methods: `setId(Integer)` and `Integer getId()`. And if you want to customize the unique id do not need auto increment, you can extend the top level abstract class `top.myrest.myflow.db.BaseDoc<T>`.
+> 在父类`top.myrest.myflow.db.AutoIncrementDoc`有两个方法：`setId(Integer)`和`Integer getId()`。如果您想要自定义唯一ID，不需要自增，您可以继承上层的抽象类`top.myrest.myflow.db.BaseDoc<T>`。
 
-## Creating Repository
+## 创建Repository
 
-Create a repository named `JavaRepo.java` locate in `src/main/java/runflow`, the content like following:
+在`src/main/java/runflow`目录下创建一个名为`JavaRepo.java`的Repository，并写入以下内容：
 
-[JavaRepo.java](java-demo-plugin/src/main/java/runflow/JavaRepo.java ':include :type=code')
+[JavaRepo.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaRepo.java ':include :type=code')
 
-> The base class `BaseRepo<ID,T>(Class<T> docClass, Boolean enableDataSync)` has many utility methods for crud operation, and you can override method `onSyncFrom` to customize how to synchronize data.
+> 基类`BaseRepo<ID,T>(Class<T> docClass, Boolean enableDataSync)`涵盖了许多实用的增删改查的方法，并且您可以重写方法`onSyncFrom`来自定义数据同步。

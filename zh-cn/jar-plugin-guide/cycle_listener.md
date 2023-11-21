@@ -1,18 +1,18 @@
-# Cycle Listener
+# 监听器(CycleListener)
 
-You can listen plugin loading state or do some initialization in cycle listener.
+您可以在监听器里监听插件的加载状态，或者进行一些初始化工作。
 
-## Creating Class
+## 创建类
 
-Create a java class named `JavaCycleListener.java` locate in `src/main/java/runflow`, writing codes like follows:
+在`src/main/java/runflow`目录下创建一个名为`JavaCycleListener.java`的类，并写入以下内容：
 
-[JavaCycleListener.java](java-demo-plugin/src/main/java/runflow/JavaCycleListener.java ':include :type=code')
+[JavaCycleListener.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaCycleListener.java ':include :type=code')
 
-> See [PluginState](appendix/plugin_state.md#plugin-state) explanation.
+> 查看[PluginState](appendix/plugin_state.md#pluginstate)解释。
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到`plugin-spec.yml`文件：
 
 ```yaml
 cycle-listener: runflow.JavaCycleListener

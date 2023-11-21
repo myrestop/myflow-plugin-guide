@@ -1,20 +1,20 @@
-# Data Encryptor
+# 数据加密器
 
-In this section, we'll write a simple encryptor that implements by base64, just explaining to you how to provide data encryptor to our data synchronization service.
+在本节中，我们将编写一个简单的通过base64编码的加密器，这里只是向您解释如何为我们的数据同步服务提供数据加密的功能。
 
-## Writing Encryptor
+## 编写加密器
 
-Create a java file named `JavaEncryptor.java` locate in `src/main/java/runflow`, and writing the following content:
+在目录`src/main/java/runflow`下创建一个名为`JavaEncryptor.java`的文件，并写入以下内容：
 
-[JavaEncryptor.java](java-demo-plugin/src/main/java/runflow/JavaEncryptor.java ':include :type=code')
+[JavaEncryptor.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaEncryptor.java ':include :type=code')
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加下面的内容到文件`plugin-spec.yml`：
 
 ```yaml
 data-encryptors:
   - runflow.JavaEncryptor
 ```
 
-> How to customize the encryptor settings content? Override the method `getSettingsContent`, and return an instance which implemented `top.myrest.myflow.component.SettingsContent` interface class. To implement this function, you should know [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation) firstly.
+> 如何自定义加密器的设置界面？您可以通过重写`getSettingsContent`方法，并返回一个实现接口`top.myrest.myflow.component.SettingsContent`的实例。要实现这个功能，您首先应该了解[JetpackCompose](https://developer.android.com/jetpack/compose/documentation)。

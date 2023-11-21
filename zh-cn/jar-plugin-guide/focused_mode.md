@@ -1,7 +1,7 @@
-# Action Focused Mode
+# 动作专注模式
 
-To write an action to make it support focused mode, you should extend abstract class `top.myrest.myflow.action.ActionFocusedKeywordHandler`, like this:
+要使一个动作支持专注模式，你需要继承抽象类`top.myrest.myflow.action.ActionFocusedKeywordHandler`，代码如下：
 
-[JavaFocusedActionHandler.java](java-demo-plugin/src/main/java/runflow/JavaFocusedActionHandler.java ':include :type=code')
+[JavaFocusedActionHandler.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaFocusedActionHandler.java ':include :type=code')
 
-> `plugin-spec.yml` configuration also like [action](jar-plugin-guide/action.md#action).
+> `plugin-spec.yml`的配置方式[动作](jar-plugin-guide/action.md#action)一样。

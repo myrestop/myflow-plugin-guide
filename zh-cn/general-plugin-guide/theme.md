@@ -1,42 +1,42 @@
 # 主题(Theme)
 
-To provide a theme, you can create a theme json file, or respond [**theme as json**](appendix/theme.md#theme).
+要提供一个主题，您可以创建一个主题json文件，或响应一个[**主题的json**](appendix/theme.md#theme)。
 
-## Writing Theme
+## 编写主题
 
 <!-- tabs:start -->
 
 #### **Commandline**
 
-In this example, we create a theme file named: [**theme.json**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/theme.json) in [**commandline demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin).
+在本示例中，我们在项目[**CommandlineDemoPlugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin)下创建一个名为[**theme.json**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/commandline-demo-plugin/theme.json)的文件。
 
-The content is as follows:
+并写入以下内容：
 
-[theme.json](commandline-demo-plugin/theme.json ':include :type=code')
+[theme.json](../../general-plugin-guide/commandline-demo-plugin/theme.json ':include :type=code')
 
 #### **HTTP**
 
-In this example, you need expose an endpoint `/theme` in your web server, we'll use post method to request you.
+在本示例中，您需要在您服务器端公开一个`/theme`的接口，我们将会post方法请求这个接口。
 
-And you can refer our [**sample code**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin/src/main/kotlin/runflow/Main.kt) in [**http demo plugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin).
+您也可以参考位于我们项目[**HttpDemoPlugin**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin)的[**示例代码**](https://github.com/myrestop/myflow-plugin-guide/tree/master/general-plugin-guide/http-demo-plugin/src/main/kotlin/runflow/Main.kt)。
 
 #### **Python**
 
-In this example we create a theme file named `theme.json`, and writing the following content:
+在本示例中，我们创建一个名为`theme.json`的文件，并写入以下内容：
 
-[theme.json](python-demo-plugin/theme.json ':include :type=code')
+[theme.json](../../general-plugin-guide/python-demo-plugin/theme.json ':include :type=code')
 
 #### **QLExpress**
 
-In this example we create a theme file named `theme.json`, and writing the following content:
+在本示例中，我们创建一个名为`theme.json`的文件，并写入以下内容：
 
-[theme.json](qlexpress-demo-plugin/theme.json ':include :type=code')
+[theme.json](../../general-plugin-guide/qlexpress-demo-plugin/theme.json ':include :type=code')
 
 <!-- tabs:end -->
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到文件`plugin-spec.yml`：
 
 <!-- tabs:start -->
 
@@ -74,4 +74,4 @@ themes:
 
 <!-- tabs:end -->
 
-> Read [**theme explanation**](appendix/theme.md#theme).
+> 了解[**主题字段解释**](appendix/theme.md#theme)。

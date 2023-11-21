@@ -1,16 +1,16 @@
-# Placeholder
+# 占位符(Placeholder)
 
-In this section, we’ll walk you through writing a random emoji string as the placeholder.
+在本节中，我们将带你编写一个随机表情符的占位符。
 
-## Writing Placeholder
+## 编写占位符
 
-Create a java file named `JavaPlaceholder.java` locate in `src/main/java/runflow`, and writing the following content:
+在`src/main/java/runflow`目录下创建一个名为`JavaPlaceholder.java`的文件，并写入以下内容：
 
-[JavaPlaceholder.java](java-demo-plugin/src/main/java/runflow/JavaPlaceholder.java ':include :type=code')
+[JavaPlaceholder.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaPlaceholder.java ':include :type=code')
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到文件`plugin-spec.yml`：
 
 ```yaml
 placeholder-updaters:

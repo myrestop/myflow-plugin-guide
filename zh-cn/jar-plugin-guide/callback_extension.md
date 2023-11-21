@@ -1,16 +1,16 @@
-# Action Callback Extension
+# 扩展动作回调
 
-In this section, we will show you how to extend callback to action result.
+在本节中，我们将向您暂时如何扩展一个动作回调。
 
-## Writing Callback Extension
+## 编写扩展
 
-Create a java file named `JavaExtension.java` locate in `src/main/java/runflow`, and writing the following content:
+在目录`src/main/java/runflow`下创建一个名为`JavaExtension.java`的文件，并写入以下内容：
 
-[JavaExtension.java](java-demo-plugin/src/main/java/runflow/JavaExtension.java ':include :type=code')
+[JavaExtension.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaExtension.java ':include :type=code')
 
-## Adding To Specification File
+## 添加到配置文件
 
-Add the following content to `plugin-spec.yml`:
+添加下面内容到`plugin-spec.yml`文件：
 
 ```yaml
 action-result-callback-extensions:
@@ -18,6 +18,6 @@ action-result-callback-extensions:
     name-bundle-id: Demo Extension
 ```
 
-> Read [**explanation of action result callback**](appendix/action_result_callback.md#fields-explanation).
+> 了解[**ActionResultCallback**](appendix/action_result_callback.md#字段解释)。
 
-> To validate the extension, you should follow our [**action tutorial**](jar-plugin-guide/action.md#java-action) to write a java action.
+> 要验证这个扩展，您需要跟随我们的[**动作教程**](jar-plugin-guide/action.md#java-action)用Java或Kotlin编写一个动作。

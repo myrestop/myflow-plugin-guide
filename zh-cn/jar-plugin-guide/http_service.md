@@ -1,18 +1,18 @@
 # Http Service
 
-To enable http service we use [**ktor**](https://ktor.io/docs/welcome.html), so if you want to expose http endpoint make sure you know ktor.
+要启用我们使用[**ktor**](https://ktor.io/docs/welcome.html)提供的http服务来公开接口，请确保您已了解ktor。
 
-Writing a hello http service by creating a kotlin file named `KotlinHttpService.kt`, code like the following:
+创建一个名为`KotlinHttpService.kt`的文件写一个输出hello的接口，代码如下：
 
-[KotlinHttpService.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinHttpService.kt ':include :type=code')
+[KotlinHttpService.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinHttpService.kt ':include :type=code')
 
-Config to `plugin-spec.yml`:
+配置plugin-spec.yml`:
 
 ```yaml
 http-modules:
   - runflow.KotlinHttpService.helloModule
 ```
 
-Restart app, open url `http://127.0.0.1:8177/hello` set the result.
+重启应用，用浏览器打开`http://127.0.0.1:8177/hello`。
 
-> 8177 is our default http port, you can customize it at **General Settings** page (don't forget to restart).
+> 8177是我们默认的端口，您可以在**通用页面**页面修改端口（不要忘记重启）。

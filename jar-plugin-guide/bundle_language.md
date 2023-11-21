@@ -12,7 +12,6 @@
 
 [KotlinLanguageBundle.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinLanguageBundle.kt ':include :type=code')
 
-
 **Add Language Resource**
 
 `en_us.yml` locate in `language`:

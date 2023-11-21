@@ -1,14 +1,14 @@
-# Action
+# 动作(Action)
 
-In this section, we'll write two action, one action writing in java that returns emojis like [general plugin demo](general-plugin-guide/action.md#action), another writing in kotlin that can dynamic refresh the content by customizing ui.
+在本节中，我们将编写两个动作，一个用Java编写和通用插件[GeneralPluginDemo](general-plugin-guide/action.md#action)的示例一样返回表情符，另一个用Kotlin编写，可以通过自定义UI动态刷新内容。
 
-## Java Action
+## Java
 
-Create a java file named `JavaActionHandler.java` locate in `src/main/java/runflow`, writing the following content:
+在`src/main/java/runflow`目录下创建一个名为`JavaActionHandler.java`的类，并写入以下内容：
 
-[JavaActionHandler.java](java-demo-plugin/src/main/java/runflow/JavaActionHandler.java ':include :type=code')
+[JavaActionHandler.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaActionHandler.java ':include :type=code')
 
-Add the following content to `plugin-spec.yml`:
+添加以下内容到文件`plugin-spec.yml`：
 
 ```yaml
 actions:
@@ -17,15 +17,15 @@ actions:
     handler: runflow.JavaActionHandler
 ```
 
-## Kotlin Action
+## Kotlin
 
-In kotlin action, we'll return two results, one result can refresh by `Alt` key, another can show currently real time that implements by customized ui. **If you want to customize ui, you need know [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation) firstly.**
+在这个Kotlin写的动作中，我们将返回两个结果，一个可以通过`Alt`键刷新，另一个可以实时显示当前时间。**如果您想自定义界面内容，首先需要了解[JetpackCompose](https://developer.android.com/jetpack/compose/documentation)。**
 
-Now, let's create a kotlin file named `KotlinActionHandler.kt` locate in `src/main/kotlin/runflow`, writing the following content:
+现在，让我们在`src/main/kotlin/runflow`目录下创建一个名为`KotlinActionHandler.kt`文件，并写入以下内容：
 
-[KotlinActionHandler.java](java-demo-plugin/src/main/kotlin/runflow/KotlinActionHandler.kt ':include :type=code')
+[KotlinActionHandler.java](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinActionHandler.kt ':include :type=code')
 
-Add the following content in `plugin-spec.yml`'s `actions` node:
+添加下面的内容到文件`plugin-spec.yml`里`actions`节点下：
 
 ```yaml
   - keywords:
@@ -34,10 +34,10 @@ Add the following content in `plugin-spec.yml`'s `actions` node:
     handler: runflow.KotlinActionHandler
 ```
 
-## Note
+## 注意
 
-> `ActionRequireArgHandler` is our optimized abstraction class, you can also implement the top interface class `ActionKeywordHandler`.
+> `ActionRequireArgHandler`是我们一个优化的抽象类，您也可以直接实现上层接口`ActionKeywordHandler`。
 
-> How to customize the action settings content? Override the method `getCustomizeSettingContent`, and return an instance which implemented `top.myrest.myflow.component.SettingsContent` interface class. To implement this function, you should know [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation) firstly.
+> 如何自定义动作的设置界面？通过重写`getCustomizeSettingContent`方法，并返回一个实现了`top.myrest.myflow.component.SettingsContent`接口的实例。要实现这个功能，您应该首先了解[JetpackCompose](https://developer.android.com/jetpack/compose/documentation)。
 
-Read explanation: [**ActionParam**](appendix/action_param.md#action-param), [**ActionResult**](appendix/action_result.md#fields-explanation), [**ActionResultCallback**](appendix/action_result_callback.md#fields-explanation), [HotEventType](appendix/hot_event_type.md#hot-event-type).
+了解关联的说明：[**ActionParam**](appendix/action_param.md#action-param)，[**ActionResult**](appendix/action_result.md#fields-explanation)，[**ActionResultCallback**](appendix/action_result_callback.md#fields-explanation)，[HotEventType](appendix/hot_event_type.md#hot-event-type)。
