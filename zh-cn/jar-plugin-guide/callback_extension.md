@@ -20,4 +20,4 @@ action-result-callback-extensions:
 
 > 了解[**ActionResultCallback**](appendix/action_result_callback.md#字段解释)。
 
-> 要验证这个扩展，您需要跟随我们的[**动作教程**](jar-plugin-guide/action.md#java-action)用Java或Kotlin编写一个动作。
+> 要验证这个扩展，您需要跟随我们的[**动作教程**](jar-plugin-guide/action.md#java)用Java或Kotlin编写一个动作。

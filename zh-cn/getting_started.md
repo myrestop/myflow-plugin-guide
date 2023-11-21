@@ -22,7 +22,7 @@
 
 [plugin-spec.yml](../hello-runflow/plugin-spec.yml ':include :type=code')
 
-> 了解这些字段的含义请查看[PluginSpecificationConfiguration](appendix/plugin_specification.md#plugin-specification)。
+> 了解这些字段的含义请查看[PluginSpecificationConfiguration](appendix/plugin_specification.md#pluginspecification)。
 
 ## 绑定语言资源文件（可选）
 
@@ -39,7 +39,6 @@
 **zh_cn.yml**
 
 [zh_cn.yml](../hello-runflow/language/zh_cn.yml ':include :type=code')
-
 
 > **我们强烈建议开发者至少需要支持英语语言。**
 

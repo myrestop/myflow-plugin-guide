@@ -17,18 +17,18 @@
 
 ### ActionMethod
 
-| 名称                        | 说明                                                                      |
-|---------------------------|-------------------------------------------------------------------------|
-| OPEN_FILE                 | 将结果作为文件打开                                                               |
-| OPEN_URL                  | 将结果作为URL并用默认浏览器打开                                                       |
-| COPY_RESULT               | 复制结果                                                                    |
-| COPY_AND_PASTE            | 复制并粘贴结果                                                                 |
-| COMMANDLINE               | 将结果作为终端命令执行                                                             |
-| PYTHON_SCRIPT             | 将结果作为Python脚本执行                                                         |
-| GOTO_FUNC_PAGE            | 将结果作为[工作页](conceptual_interpretation.md#工作页)打开                          |
-| SET_TO_ACTION_TEXT        | 将结果作为字符串输入到[动作输入框](conceptual_interpretation.md#动作输入框actioninputfield)) |
-| POWERSHELL_SCRIPT         | 将结果作为多行的PowerShell脚本执行                                                  |
-| POWERSHELL_SINGLE_COMMAND | 将结果作为单行的PowerShell命令执行                                                  |
+| 名称                        | 说明                                                                     |
+|---------------------------|------------------------------------------------------------------------|
+| OPEN_FILE                 | 将结果作为文件打开                                                              |
+| OPEN_URL                  | 将结果作为URL并用默认浏览器打开                                                      |
+| COPY_RESULT               | 复制结果                                                                   |
+| COPY_AND_PASTE            | 复制并粘贴结果                                                                |
+| COMMANDLINE               | 将结果作为终端命令执行                                                            |
+| PYTHON_SCRIPT             | 将结果作为Python脚本执行                                                        |
+| GOTO_FUNC_PAGE            | 将结果作为[工作页](conceptual_interpretation.md#工作页)打开                         |
+| SET_TO_ACTION_TEXT        | 将结果作为字符串输入到[动作输入框](conceptual_interpretation.md#动作输入框actioninputfield) |
+| POWERSHELL_SCRIPT         | 将结果作为多行的PowerShell脚本执行                                                 |
+| POWERSHELL_SINGLE_COMMAND | 将结果作为单行的PowerShell命令执行                                                 |
 
 ### SortOrder
 

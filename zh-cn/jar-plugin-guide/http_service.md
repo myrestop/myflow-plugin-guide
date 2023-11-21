@@ -1,4 +1,4 @@
-# Http Service
+# Http服务
 
 要启用我们使用[**ktor**](https://ktor.io/docs/welcome.html)提供的http服务来公开接口，请确保您已了解ktor。
 
@@ -6,7 +6,7 @@
 
 [KotlinHttpService.kt](../../jar-plugin-guide/java-demo-plugin/src/main/kotlin/runflow/KotlinHttpService.kt ':include :type=code')
 
-配置plugin-spec.yml`:
+配置`plugin-spec.yml`:
 
 ```yaml
 http-modules:
@@ -15,4 +15,4 @@ http-modules:
 
 重启应用，用浏览器打开`http://127.0.0.1:8177/hello`。
 
-> 8177是我们默认的端口，您可以在**通用页面**页面修改端口（不要忘记重启）。
+> 8177是我们默认的端口，您可以在**通用设置**页面修改端口（不要忘记重启）。

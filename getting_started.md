@@ -40,7 +40,6 @@ The file content as following:
 
 [zh_cn.yml](hello-runflow/language/zh_cn.yml ':include :type=code')
 
-
 > **We strongly suggest developer to support english language at least.**
 
 ## Describing Plugin (Optional)

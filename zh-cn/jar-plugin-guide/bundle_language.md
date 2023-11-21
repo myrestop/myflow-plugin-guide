@@ -1,4 +1,4 @@
-# Bundle Language To Bean
+# 绑定语言到JavaBean
 
 **将语言资源绑定到JavaBean是很简单的。**
 

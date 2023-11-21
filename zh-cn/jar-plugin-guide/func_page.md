@@ -1,4 +1,4 @@
-# Func Page
+# 工作页
 
 要编写工作页，请确保您熟悉[**JetpackCompose**](https://developer.android.com/jetpack/compose/documentation)。
 

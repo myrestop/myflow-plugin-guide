@@ -4,4 +4,4 @@
 
 [JavaFocusedActionHandler.java](../../jar-plugin-guide/java-demo-plugin/src/main/java/runflow/JavaFocusedActionHandler.java ':include :type=code')
 
-> `plugin-spec.yml`的配置方式[动作](jar-plugin-guide/action.md#action)一样。
+> `plugin-spec.yml`的配置方式[动作](jar-plugin-guide/action.md#动作action)一样。

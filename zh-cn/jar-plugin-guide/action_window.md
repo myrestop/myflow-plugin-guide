@@ -1,6 +1,6 @@
 # 工作窗口(ActionWindow)
 
-要替换我们的[**工作窗口**](conceptual_interpretation.md#工作窗口actionwindow)，您需要做很多额外的工作 **首先您需要熟悉[JetpackCompose](https://developer.android.com/jetpack/compose/documentation)，然后您需要熟悉本文档的所有内容。
+要替换我们的[**工作窗口**](conceptual_interpretation.md#工作窗口actionwindow)，您需要做很多额外的工作 **首先您需要熟悉[JetpackCompose](https://developer.android.com/jetpack/compose/documentation)，然后您还需要熟悉本文档的所有内容。**
 
 提供一个工作窗口可以通过实现`top.myrest.myflow.component.ActionWindowProvider`接口：
 

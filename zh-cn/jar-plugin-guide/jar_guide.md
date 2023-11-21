@@ -73,6 +73,6 @@ compatible-version:
 
 - [**Http服务**](jar-plugin-guide/http_service.md#http服务)解释了如何使用我们内置的http服务来公开接口。
 
-- [**绑定语言**](jar-plugin-guide/bundle_language.md#绑定语言)解释了如何将语言资源绑定到JavaBean。
+- [**绑定语言**](jar-plugin-guide/bundle_language.md#绑定语言到javabean)解释了如何将语言资源绑定到JavaBean。
 
-- [**实用工具**](jar-plugin-guide/utilities.md#utilities)解释了所有常用的类、方法和字段。
+- [**实用工具**](jar-plugin-guide/utilities.md#实用工具)解释了所有常用的类、方法和字段。
