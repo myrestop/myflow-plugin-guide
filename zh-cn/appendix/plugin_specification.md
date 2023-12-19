@@ -1,29 +1,29 @@
 # PluginSpecification
 
-| 字段                  | 类型                                              | 必填 | 说明                                                       | 示例                   |
-|---------------------|-------------------------------------------------|----|----------------------------------------------------------|----------------------|
-| id                  | String                                          | 是  | 插件Id，您可以在[这里](https://myrest.top/user?module=plugin)申请   | "com.example.plugin" |
-| name                | String                                          | 是  | 插件英文名称，您可以在[这里](https://myrest.top/user?module=plugin)申请 | "Demo Plugin"        |
-| entry               | String                                          | 否  | 插件入口文件，在Jar插件中，这必须是一个Jar文件                               | "plugin.jar"         |
-| customizeLoader     | String                                          | 否  | 插件类型或类加载器，[了解更多](#自定义加载器)                                | "customizable"       |
-| version             | String                                          | 是  | 插件版本                                                     | "1.0.0"              |
-| logo                | String                                          | 否  | logo，如果需上传至插件商店，那么此字段必填                                  | "./logos/logo.png"   |
-| homepage            | String                                          | 否  | 插件主页URL                                                  |                      |
-| compatibleVersion   | [CompatibleVersion](#compatibleversion)         | 是  | 兼容RunFlow的版本                                             |                      |
-| owner               | [Vendor](#vendor)                               | 否  | 插件所有者，  如果需上传至插件商店，那么此字段必填                               |                      |
-| contributors        | List<[Vendor](#vendor)>                         | 否  | 插件的贡献者                                                   |                      |
-| dependOnPlugins     | List<[DependOnPlugin](#dependonplugin)>         | 否  | 依赖的插件                                                    |                      |
-| cycleListener       | String                                          | 否  | 插件状态监听，当插件运行、暂停或被卸载时，我们将通知您                              |                      |
-| languageBundleName  | String                                          | 否  | 绑定语言资源到JavaBean                                          |                      |
-| groups              | List<[Group](#group)>                           | 否  | 关键字分组                                                    |                      |
-| actions             | List<[ActionKeywordProps](#actionkeywordprops)> | 否  | 插件所有的[动作](conceptual_interpretation.md#动作action)         |                      |
-| actionWindows       | List<[NamedService](#namedservice)>             | 否  | 提供工作窗口，仅Jar插件可用                                          |                      |
-| placeholderUpdaters | List<[PlaceholderUpdater](#placeholderupdater)> | 否  | 更新占位符                                                    |                      |
-| themes              | List<[NamedService](#namedservice)>             | 否  | 提供主题                                                     |                      |
-| httpModules         | List\<String\>                                  | 否  | 通过[ktor](https://ktor.io/docs/welcome.html)启用HTTP服务      |                      |
-| translator          | [NamedService](#namedservice)                   | 否  | 提供语言翻译功能，仅Jar插件可用                                        |                      |
-| dataEncryptors      | List\<String\>                                  | 否  | 提供数据加密器，仅Jar插件可用                                         |                      |
-| dataSyncServices    | List<[NamedService](#namedservice)>             | 否  | 提供数据同步服务，仅Jar插件可用                                        |                      |
+| 字段                  | 类型                                              | 必填 | 说明                                                  | 示例                   |
+|---------------------|-------------------------------------------------|----|-----------------------------------------------------|----------------------|
+| id                  | String                                          | 是  | 插件Id，您可以在[这里](https://myrest.top/user/plugin)申请     | "com.example.plugin" |
+| name                | String                                          | 是  | 插件英文名称，您可以在[这里](https://myrest.top/user/plugin)申请   | "Demo Plugin"        |
+| entry               | String                                          | 否  | 插件入口文件，在Jar插件中，这必须是一个Jar文件                          | "plugin.jar"         |
+| customizeLoader     | String                                          | 否  | 插件类型或类加载器，[了解更多](#自定义加载器)                           | "customizable"       |
+| version             | String                                          | 是  | 插件版本                                                | "1.0.0"              |
+| logo                | String                                          | 否  | logo，如果需上传至插件商店，那么此字段必填                             | "./logos/logo.png"   |
+| homepage            | String                                          | 否  | 插件主页URL                                             |                      |
+| compatibleVersion   | [CompatibleVersion](#compatibleversion)         | 是  | 兼容RunFlow的版本                                        |                      |
+| owner               | [Vendor](#vendor)                               | 否  | 插件所有者，  如果需上传至插件商店，那么此字段必填                          |                      |
+| contributors        | List<[Vendor](#vendor)>                         | 否  | 插件的贡献者                                              |                      |
+| dependOnPlugins     | List<[DependOnPlugin](#dependonplugin)>         | 否  | 依赖的插件                                               |                      |
+| cycleListener       | String                                          | 否  | 插件状态监听，当插件运行、暂停或被卸载时，我们将通知您                         |                      |
+| languageBundleName  | String                                          | 否  | 绑定语言资源到JavaBean                                     |                      |
+| groups              | List<[Group](#group)>                           | 否  | 关键字分组                                               |                      |
+| actions             | List<[ActionKeywordProps](#actionkeywordprops)> | 否  | 插件所有的[动作](conceptual_interpretation.md#动作action)    |                      |
+| actionWindows       | List<[NamedService](#namedservice)>             | 否  | 提供工作窗口，仅Jar插件可用                                     |                      |
+| placeholderUpdaters | List<[PlaceholderUpdater](#placeholderupdater)> | 否  | 更新占位符                                               |                      |
+| themes              | List<[NamedService](#namedservice)>             | 否  | 提供主题                                                |                      |
+| httpModules         | List\<String\>                                  | 否  | 通过[ktor](https://ktor.io/docs/welcome.html)启用HTTP服务 |                      |
+| translator          | [NamedService](#namedservice)                   | 否  | 提供语言翻译功能，仅Jar插件可用                                   |                      |
+| dataEncryptors      | List\<String\>                                  | 否  | 提供数据加密器，仅Jar插件可用                                    |                      |
+| dataSyncServices    | List<[NamedService](#namedservice)>             | 否  | 提供数据同步服务，仅Jar插件可用                                   |                      |
 
 | 字段                             | 类型                                                               | 必填 | 说明                      | 示例               |
 |--------------------------------|------------------------------------------------------------------|----|-------------------------|------------------|

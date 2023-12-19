@@ -1,29 +1,29 @@
 # Plugin Specification
 
-| field               | type                                              | required | explanation                                                                               | example              |
-|---------------------|---------------------------------------------------|----------|-------------------------------------------------------------------------------------------|----------------------|
-| id                  | String                                            | yes      | the plugin id, you can apply it [here](https://myrest.top/user?module=plugin)             | "com.example.plugin" |
-| name                | String                                            | yes      | the plugin's english name, you can apply it [here](https://myrest.top/user?module=plugin) | "Demo Plugin"        |
-| entry               | String                                            | no       | plugin main entry file, in jar plugin, this is a required jar file                        | "plugin.jar"         |
-| customizeLoader     | String                                            | no       | how to load the plugin, or the class loader of jar, [learn more](#customize-loader)       | "customizable"       |
-| version             | String                                            | yes      | the plugin version                                                                        | "1.0.0"              |
-| logo                | String                                            | no       | logo file path, required if you want upload to plugin store                               | "./logos/logo.png"   |
-| homepage            | String                                            | no       | plugin homepage url                                                                       |                      |
-| compatibleVersion   | [CompatibleVersion](#compatible-version)          | yes      | compatible RunFlow version                                                                |                      |
-| owner               | [Vendor](#vendor)                                 | no       | owner of this plugin, required if you want upload to plugin store                         |                      |
-| contributors        | List<[Vendor](#vendor)>                           | no       | contributor of this plugin                                                                |                      |
-| dependOnPlugins     | List<[DependOnPlugin](#depend-on-plugin)>         | no       | plugin depends                                                                            |                      |
-| cycleListener       | String                                            | no       | when plugin is loaded, or started, or stopped, or uninstalled, we'll call you             |                      |
-| languageBundleName  | String                                            | no       | bundle language to java class, only available for jar plugin                              |                      |
-| groups              | List<[Group](#group)>                             | no       | grouping                                                                                  |                      |
-| actions             | List<[ActionKeywordProps](#action-keyword-props)> | no       | all of your [actions](conceptual_interpretation.md#action)                                |                      |
-| actionWindows       | List<[NamedService](#named-service)>              | no       | provide action window, only jar plugin available                                          |                      |
-| placeholderUpdaters | List<[PlaceholderUpdater](#placeholder-updater)>  | no       | update the placeholder of action input field                                              |                      |
-| themes              | List<[NamedService](#named-service)>              | no       | provide theme                                                                             |                      |
-| httpModules         | List\<String\>                                    | no       | run http service use [ktor](https://ktor.io/docs/welcome.html)                            |                      |
-| translator          | [NamedService](#named-service)                    | no       | provide a language translator, only jar plugin available                                  |                      |
-| dataEncryptors      | List\<String\>                                    | no       | data encryptor, only jar plugin available                                                 |                      |
-| dataSyncServices    | List<[NamedService](#named-service)>              | no       | provide data sync service, only jar plugin available                                      |                      |
+| field               | type                                              | required | explanation                                                                         | example              |
+|---------------------|---------------------------------------------------|----------|-------------------------------------------------------------------------------------|----------------------|
+| id                  | String                                            | yes      | the plugin id, you can apply it [here](https://myrest.top/user/plugin)              | "com.example.plugin" |
+| name                | String                                            | yes      | the plugin's english name, you can apply it [here](https://myrest.top/user/plugin)  | "Demo Plugin"        |
+| entry               | String                                            | no       | plugin main entry file, in jar plugin, this is a required jar file                  | "plugin.jar"         |
+| customizeLoader     | String                                            | no       | how to load the plugin, or the class loader of jar, [learn more](#customize-loader) | "customizable"       |
+| version             | String                                            | yes      | the plugin version                                                                  | "1.0.0"              |
+| logo                | String                                            | no       | logo file path, required if you want upload to plugin store                         | "./logos/logo.png"   |
+| homepage            | String                                            | no       | plugin homepage url                                                                 |                      |
+| compatibleVersion   | [CompatibleVersion](#compatible-version)          | yes      | compatible RunFlow version                                                          |                      |
+| owner               | [Vendor](#vendor)                                 | no       | owner of this plugin, required if you want upload to plugin store                   |                      |
+| contributors        | List<[Vendor](#vendor)>                           | no       | contributor of this plugin                                                          |                      |
+| dependOnPlugins     | List<[DependOnPlugin](#depend-on-plugin)>         | no       | plugin depends                                                                      |                      |
+| cycleListener       | String                                            | no       | when plugin is loaded, or started, or stopped, or uninstalled, we'll call you       |                      |
+| languageBundleName  | String                                            | no       | bundle language to java class, only available for jar plugin                        |                      |
+| groups              | List<[Group](#group)>                             | no       | grouping                                                                            |                      |
+| actions             | List<[ActionKeywordProps](#action-keyword-props)> | no       | all of your [actions](conceptual_interpretation.md#action)                          |                      |
+| actionWindows       | List<[NamedService](#named-service)>              | no       | provide action window, only jar plugin available                                    |                      |
+| placeholderUpdaters | List<[PlaceholderUpdater](#placeholder-updater)>  | no       | update the placeholder of action input field                                        |                      |
+| themes              | List<[NamedService](#named-service)>              | no       | provide theme                                                                       |                      |
+| httpModules         | List\<String\>                                    | no       | run http service use [ktor](https://ktor.io/docs/welcome.html)                      |                      |
+| translator          | [NamedService](#named-service)                    | no       | provide a language translator, only jar plugin available                            |                      |
+| dataEncryptors      | List\<String\>                                    | no       | data encryptor, only jar plugin available                                           |                      |
+| dataSyncServices    | List<[NamedService](#named-service)>              | no       | provide data sync service, only jar plugin available                                |                      |
 
 | field                          | type                                                                      | required | explanation                                                    | example          |
 |--------------------------------|---------------------------------------------------------------------------|----------|----------------------------------------------------------------|------------------|
