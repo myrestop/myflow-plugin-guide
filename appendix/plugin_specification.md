@@ -150,7 +150,7 @@ owner:
   name: example
   email: service@example.com
   homepage: https://example.com
-dependOnPlugins:
+depend-on-plugins:
   - id: com.example.plugin.kk
     optional: true
 cycle-listener: com.example.plugin.CycleListener
