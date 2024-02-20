@@ -152,6 +152,24 @@
 |`shared.sync`|`Sync`|
 |`shared.encryption`|`Encryption`|
 |`shared.algorithm`|`Algorithm`|
+|`shared.activate`|`Activate`|
+|`shared.login`|`Login`|
+|`shared.on-trial`|`On Trial`|
+|`shared.trial-expired`|`Trial Expired`|
+|`shared.activated`|`Activated`|
+|`shared.license-expired`|`License Expired`|
+|`shared.renew`|`Renew`|
+|`shared.buy`|`Buy`|
+|`shared.plugins`|`Plugins`|
+|`shared.install`|`Install`|
+|`shared.installed`|`Installed`|
+|`shared.review`|`Review`|
+|`shared.about`|`About`|
+|`shared.feedback`|`Feedback`|
+|`shared.check-updates`|`Check Updates`|
+|`shared.downloading`|`Downloading`|
+|`shared.latest-version`|`Already The Latest Version`|
+|`shared.activate-failed`|`Activate Failed`|
 |`calculator.copy-double`|`Copy Two Precised Double`|
 |`calculator.copy-int`|`Copy Integer Only`|
 |`calculator.copy-full`|`Copy Full Result`|
@@ -225,3 +243,4 @@
 |`placeholder.search-file`|`Search Files`|
 |`placeholder.search-clipboard`|`Search Clipboards`|
 |`placeholder.generate-qrcode`|`Generate Qrcode`|
+|`input-license`|`input your license to activate runflow`|

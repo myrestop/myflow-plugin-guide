@@ -6,7 +6,7 @@ In this tutorial, you'll learn how to write a jar plugin on JVM, we'll use both 
 
 ## Creating Project
 
-First step, we need to use [intellij idea](https://www.jetbrains.com/idea) to create a java project named `java-demo-plugin` using [gradle](https://gradle.org) as the build tool, **and the jdk version we require 17+**, choosing kotlin as gradle dsl.
+First step, we need to use [intellij idea](https://www.jetbrains.com/idea) to create a java project named `java-demo-plugin` using [gradle](https://gradle.org) as the build tool, **and we required jdk version is 17**, choosing kotlin as the gradle dsl.
 
 `settings.gradle.kts` content as follows:
 

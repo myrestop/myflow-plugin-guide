@@ -6,7 +6,7 @@
 
 ## 创建项目
 
-首页，我们需要用[IntellijIdea](https://www.jetbrains.com/idea)创建一个名为`java-demo-plugin`使用[Gradle](https://gradle.org)作为构建工具的Java项目，**并且我们要求JDK版本不低于17**，使用Kotlin作为GradleDSL语言。
+首页，我们需要用[IntellijIdea](https://www.jetbrains.com/idea)创建一个名为`java-demo-plugin`使用[Gradle](https://gradle.org)作为构建工具的Java项目，**并且我们要求必须使用JDK17**，使用Kotlin作为GradleDSL语言。
 
 `settings.gradle.kts`内容如下：
 
