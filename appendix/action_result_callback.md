@@ -27,7 +27,7 @@
 | PYTHON_SCRIPT             | let result as a python script file and execute it                                                       |
 | GOTO_FUNC_PAGE            | let result as a [func page](conceptual_interpretation.md#func-page) and pin it as keyword               |
 | SET_TO_ACTION_TEXT        | let result as a string and set to [action input field](conceptual_interpretation.md#action-input-field) |
-| POWERSHELL_SCRIPT         | let result as multi line powershell script and execute it                                               |
+| POWERSHELL_SCRIPT         | let result as multi lines powershell script and execute it                                              |
 | POWERSHELL_SINGLE_COMMAND | let result as a single powershell command and execute it                                                |
 
 ### Sort Order

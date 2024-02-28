@@ -2,8 +2,8 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     id("java")
-    kotlin("jvm") version "1.9.21"
-    id("org.jetbrains.compose") version "1.5.11"
+    kotlin("jvm") version "1.9.22"
+    id("org.jetbrains.compose") version "1.5.12"
 }
 
 group = "runflow"
@@ -16,7 +16,7 @@ repositories {
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
-val myflowVersion = "1.0.0"
+val myflowVersion = "1.0.1"
 
 dependencies {
     compileOnly(compose.desktop.currentOs)
