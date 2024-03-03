@@ -16,7 +16,7 @@ repositories {
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
-val myflowVersion = "1.0.1"
+val myflowVersion = "1.0.2"
 
 dependencies {
     compileOnly(compose.desktop.currentOs)
