@@ -18,7 +18,7 @@
   - [翻译](jar-plugin-guide/translator.md#翻译 "RunFlow插件开发指南")
   - [动作专注模式](jar-plugin-guide/focused_mode.md#动作专注模式 "RunFlow插件开发指南")
   - [工具栏](jar-plugin-guide/toolbar.md#工具栏 "RunFlow插件开发指南")
-  - [工作页](jar-plugin-guide/func_page.md#工作页 "RunFlow插件开发指南")
+  - [功能页](jar-plugin-guide/func_page.md#功能页 "RunFlow插件开发指南")
   - [工作窗口(ActionWindow)](jar-plugin-guide/action_window.md#工作窗口actionwindow "RunFlow插件开发指南")
   - [Http服务](jar-plugin-guide/http_service.md#http服务 "RunFlow插件开发指南")
   - [绑定语言](jar-plugin-guide/bundle_language.md#绑定语言到javabean "RunFlow插件开发指南")

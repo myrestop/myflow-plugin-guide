@@ -34,9 +34,9 @@
 
 > [动作结果回调字段解释](appendix/action_result_callback.md#字段解释)
 
-## 工作页
+## 功能页
 
-工作页是您自定义的界面，他可以作为固定关键字打开，如果您提供的功能需要与用户图形界面交互，那么您需要通过工作页来实现，但此特性只能在[Jar插件](jar-plugin-guide/jar_guide.md#jar插件指南)下可用。如果您熟悉任何JVM类编程语言，您可以阅读[本节](jar-plugin-guide/func_page.md#工作页)来了解如何编写一个工作页。
+功能页是您自定义的界面，他可以作为固定关键字打开，如果您提供的功能需要与用户图形界面交互，那么您需要通过功能页来实现，但此特性只能在[Jar插件](jar-plugin-guide/jar_guide.md#jar插件指南)下可用。如果您熟悉任何JVM类编程语言，您可以阅读[本节](jar-plugin-guide/func_page.md#功能页)来了解如何编写一个功能页。
 
 ## 接下来做什么
 

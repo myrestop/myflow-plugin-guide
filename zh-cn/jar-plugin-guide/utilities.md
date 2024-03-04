@@ -104,7 +104,7 @@
 | fun \<T : Any\> cacheByCurrentLanguage(calculator: () -> T): T                                                      | 缓存状态                            |
 | fun Dp.roundToPx(): Int                                                                                             | dp转px                           |
 | fun Number.roundToDp(): Dp                                                                                          | px转dp                           |
-| fun \<T : Any\> FuncPageScope.remember4FuncPage(key: String = "", calculation: @DisallowComposableCalls () -> T): T | 针对工作页的状态缓存                      |
+| fun \<T : Any\> FuncPageScope.remember4FuncPage(key: String = "", calculation: @DisallowComposableCalls () -> T): T | 针对功能页的状态缓存                      |
 | fun \<T : Any\> remember(pinId: String, key: String = "", calculation: @DisallowComposableCalls () -> T): T         | 缓存状态                            |
 | fun \<T : Any\> cacheState(pinId: String, key: String = "", calculation: () -> T): T                                | 缓存状态                            |
 | fun removeStateCache(pinId: String?)                                                                                | 删除状态缓存                          |

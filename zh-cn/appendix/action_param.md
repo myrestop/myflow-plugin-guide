@@ -22,7 +22,7 @@
 |----------------|-----------------------------------------|
 | MAIN           | 主场景                                     |
 | PINNED_KEYWORD | 固定的关键字                                  |
-| FUNC_PAGE      | [工作页](conceptual_interpretation.md#工作页) |
+| FUNC_PAGE      | [功能页](conceptual_interpretation.md#功能页) |
 
 ### ActionArgType
 

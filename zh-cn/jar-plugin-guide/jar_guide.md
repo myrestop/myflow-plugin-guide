@@ -67,7 +67,7 @@ compatible-version:
 
 - [**工具栏**](jar-plugin-guide/toolbar.md#工具栏)解释了如何提供一个工具栏。
 
-- [**工作页**](jar-plugin-guide/func_page.md#工作页)解释了如何实现一个自定义的界面。
+- [**功能页**](jar-plugin-guide/func_page.md#功能页)解释了如何实现一个自定义的界面。
 
 - [**工作窗口(ActionWindow)**](jar-plugin-guide/action_window.md#工作窗口actionwindow)解释了如何替换我们的工作窗口。
 
