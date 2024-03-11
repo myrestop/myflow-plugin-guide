@@ -170,6 +170,7 @@
 |`shared.downloading`|`Downloading`|
 |`shared.latest-version`|`Already The Latest Version`|
 |`shared.activate-failed`|`Activate Failed`|
+|`shared.logs`|`Logs`|
 |`calculator.copy-double`|`Copy Two Precised Double`|
 |`calculator.copy-int`|`Copy Integer Only`|
 |`calculator.copy-full`|`Copy Full Result`|

@@ -170,6 +170,7 @@
 |`shared.downloading`|`下载中`|
 |`shared.latest-version`|`已是最新版本`|
 |`shared.activate-failed`|`激活失败`|
+|`shared.logs`|`日志`|
 |`calculator.copy-double`|`复制两个精度的小数`|
 |`calculator.copy-int`|`复制整型`|
 |`calculator.copy-full`|`复制完整运算结果`|
