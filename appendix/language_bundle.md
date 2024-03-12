@@ -171,6 +171,7 @@
 |`shared.latest-version`|`Already The Latest Version`|
 |`shared.activate-failed`|`Activate Failed`|
 |`shared.logs`|`Logs`|
+|`shared.upgrade`|`Upgrade`|
 |`calculator.copy-double`|`Copy Two Precised Double`|
 |`calculator.copy-int`|`Copy Integer Only`|
 |`calculator.copy-full`|`Copy Full Result`|
