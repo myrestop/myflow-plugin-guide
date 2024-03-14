@@ -4,8 +4,8 @@ entry: ./{os}/commandline-demo-plugin
 customize-loader: commandline
 version: 1.0.0
 compatible-version:
-  since-build: 0
-  until-build: 2147483647
+  since-build: 1
+  until-build: 392
 actions:
   - keywords:
       - clemoji

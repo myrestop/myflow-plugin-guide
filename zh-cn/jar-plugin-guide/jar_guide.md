@@ -29,8 +29,8 @@ entry: ./java-demo-plugin.jar
 customize-loader: default
 version: 1.0.0
 compatible-version:
-  since-build: 0
-  until-build: 2147483647
+  since-build: 1
+  until-build: 392
 ```
 
 ## 创建MainTest类用于开发与测试

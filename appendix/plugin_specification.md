@@ -144,8 +144,8 @@ version: 1.0.0
 logo: ./logos/logo.png
 homepage: https://example.com
 compatible-version:
-  since-build: 0
-  until-build: 2147483647
+  since-build: 1
+  until-build: 392
 owner:
   name: example
   email: service@example.com
