@@ -30,7 +30,7 @@ customize-loader: default
 version: 1.0.0
 compatible-version:
   since-build: 1
-  until-build: 392
+  until-build: 436
 ```
 
 ## 创建MainTest类用于开发与测试

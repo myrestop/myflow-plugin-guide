@@ -22,7 +22,7 @@ customize-loader: commandline
 version: 1.0.0
 compatible-version:
   since-build: 1
-  until-build: 392
+  until-build: 436
 ```
 
 **在这类插件实现方式中，我们将通过命令行向您传递一个json字符串被base64编码后的参数，因此当您获取此参数时，首先您需要通过base64解码成json字符串，然后使用您喜欢的json库解析。**
@@ -41,7 +41,7 @@ customize-loader: http
 version: 1.0.0
 compatible-version:
   since-build: 1
-  until-build: 392
+  until-build: 436
 ```
 
 **在这类插件实现方式中，我们将使用post方法并携带一个json正文向您发起请求，并且我们要求您的http接口需要在500毫秒内响应。** 
@@ -59,7 +59,7 @@ customize-loader: python
 version: 1.0.0
 compatible-version:
   since-build: 1
-  until-build: 392
+  until-build: 436
 ```
 
 **在这类插件实现方式中，他本质上是和`commandline`一样的，我们将通过命令行向您传递一个json字符串被base64编码后的参数。**
@@ -77,7 +77,7 @@ customize-loader: qlexpress
 version: 1.0.0
 compatible-version:
   since-build: 1
-  until-build: 392
+  until-build: 436
 ```
 
 **在这类插件实现方式中，请求的json参数我们将直接存放到上下文中，您可以像使用变量一样直接使用他们。** [了解我们对qlexpress的优化](appendix/qlexpress.md#qlexpress) & [了解QLExpress](https://github.com/alibaba/QLExpress)

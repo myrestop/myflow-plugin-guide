@@ -4,7 +4,7 @@ customize-loader: qlexpress
 version: 1.0.0
 compatible-version:
   since-build: 1
-  until-build: 392
+  until-build: 436
 actions:
   - keywords:
       - qlemoji
