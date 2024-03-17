@@ -2,7 +2,7 @@
 
 在本章中，您将了解如何编写一个响应固定内容的插件。
 
-> 请确保您已安装应用程序[RunFlow](https://myrest.top/myflow)。
+> 请确保您已安装应用程序[RunFlow](https://myrest.top/zh-cn/myflow)。
 
 ## 创建项目目录
 

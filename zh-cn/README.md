@@ -6,7 +6,7 @@
 
 如果您是Java、Kotlin或其他任何基于JVM的开发人员，那么您可以与RunFlow有更友好的交互，因为您可以直接使用我们向您开放的许多API，您还可以自定义程序界面。
 
-在开始我们的插件开发旅程之前，请确保您已阅读我们的[RunFlow用户手册](https://myrest.top/guide/myflow/user)，这将对您阅读本文档有所帮助。
+在开始我们的插件开发旅程之前，请确保您已阅读我们的[RunFlow用户手册](https://myrest.top/zh-cn/guide/myflow/user)，这将对您阅读本文档有所帮助。
 
 > 如果您不是开发人员，那么您无需阅读此文档。
 
@@ -18,7 +18,7 @@ RunFlow是一款可以通过插件来扩展功能的强大的效率工具，并�
 
 ## 前置条件
 
-- 安装了[RunFlow](https://myrest.top/myflow)应用程序
+- 安装了[RunFlow](https://myrest.top/zh-cn/myflow)应用程序
 
 - 熟悉任何一门编程语言
 
