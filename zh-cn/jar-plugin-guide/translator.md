@@ -7,9 +7,9 @@
 然后，添加到文件`plugin-spec.yml`：
 
 ```yaml
-translator:
-  service: runflow.JavaTranslator
-  name-bundle-id: Demo Translator
+translators:
+  - service: runflow.JavaTranslator
+    name-bundle-id: Demo Translator
 ```
 
 > 了解[语言编码](appendix/language_code.md#语言编码)。

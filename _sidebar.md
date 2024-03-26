@@ -22,6 +22,7 @@
   - [Action Window](jar-plugin-guide/action_window.md#action-window "RunFlow Plugin Guide")
   - [Http Service](jar-plugin-guide/http_service.md#http-service "RunFlow Plugin Guide")
   - [Bundle Language](jar-plugin-guide/bundle_language.md#bundle-language-to-bean "RunFlow Plugin Guide")
+  - [Localization Matcher](jar-plugin-guide/localization_matcher.md#localized-matching "RunFlow Plugin Guide")
   - [Utilities](jar-plugin-guide/utilities.md#utilities "RunFlow Plugin Guide")
 - [**Upload To Plugin Store**](upload_plugin.md#upload-to-plugin-store "RunFlow Plugin Guide")
 - [**Appendix**](appendix/appendix.md#appendix "RunFlow Plugin Guide")

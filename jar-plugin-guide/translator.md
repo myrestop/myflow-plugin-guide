@@ -7,9 +7,9 @@ To implement a language translator, you can implement our `top.myrest.myflow.lan
 Then, config to `plugin-spec.yml`:
 
 ```yaml
-translator:
-  service: runflow.JavaTranslator
-  name-bundle-id: Demo Translator
+translators:
+  - service: runflow.JavaTranslator
+    name-bundle-id: Demo Translator
 ```
 
 > See [language codes](appendix/language_code.md#language-code).

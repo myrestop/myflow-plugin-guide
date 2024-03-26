@@ -145,7 +145,7 @@ logo: ./logos/logo.png
 homepage: https://example.com
 compatible-version:
   since-build: 1
-  until-build: 436
+  until-build: 516
 owner:
   name: example
   email: service@example.com

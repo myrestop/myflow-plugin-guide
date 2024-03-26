@@ -172,6 +172,8 @@
 |`shared.activate-failed`|`激活失败`|
 |`shared.logs`|`日志`|
 |`shared.upgrade`|`升级`|
+|`shared.digest`|`摘要`|
+|`shared.save-as-file`|`保存为文件`|
 |`calculator.copy-double`|`复制两个精度的小数`|
 |`calculator.copy-int`|`复制整型`|
 |`calculator.copy-full`|`复制完整运算结果`|

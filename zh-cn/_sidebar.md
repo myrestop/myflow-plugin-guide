@@ -22,6 +22,7 @@
   - [工作窗口(ActionWindow)](jar-plugin-guide/action_window.md#工作窗口actionwindow "RunFlow插件开发指南")
   - [Http服务](jar-plugin-guide/http_service.md#http服务 "RunFlow插件开发指南")
   - [绑定语言](jar-plugin-guide/bundle_language.md#绑定语言到javabean "RunFlow插件开发指南")
+  - [本地化匹配](jar-plugin-guide/localization_matcher.md#本地化匹配 "RunFlow插件开发指南")
   - [实用工具](jar-plugin-guide/utilities.md#实用工具 "RunFlow插件开发指南")
 - [**上传至插件商店**](upload_plugin.md#上传至插件商店 "RunFlow插件开发指南")
 - [**附录**](appendix/appendix.md#附录 "RunFlow插件开发指南")
