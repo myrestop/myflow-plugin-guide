@@ -75,4 +75,6 @@ Create a `MainTest.java` file locate in `src/test/java`, the codes like followin
 
 - [**Bundle Language**](jar-plugin-guide/bundle_language.md#bundle-language-to-bean) interprets how to bundle language resource to java bean.
 
+- [**Localization Matcher**](jar-plugin-guide/localization_matcher.md#localized-matching) interprets how to help us get more user-friendly results when looking for keywords.
+
 - [**Utilities**](jar-plugin-guide/utilities.md#utilities) interprets all the useful classes, methods and fields.

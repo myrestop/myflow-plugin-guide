@@ -75,4 +75,6 @@ compatible-version:
 
 - [**绑定语言**](jar-plugin-guide/bundle_language.md#绑定语言到javabean)解释了如何将语言资源绑定到JavaBean。
 
+- [**本地化匹配**](jar-plugin-guide/localization_matcher.md#本地化匹配)解释了如何为我们的关键字查找提供更人性化的匹配。
+
 - [**实用工具**](jar-plugin-guide/utilities.md#实用工具)解释了所有常用的类、方法和字段。
