@@ -174,6 +174,7 @@
 |`shared.upgrade`|`Upgrade`|
 |`shared.digest`|`Digest`|
 |`shared.save-as-file`|`Save As File`|
+|`shared.localized-matching`|`Localized Matching`|
 |`calculator.copy-double`|`Copy Two Precised Double`|
 |`calculator.copy-int`|`Copy Integer Only`|
 |`calculator.copy-full`|`Copy Full Result`|
