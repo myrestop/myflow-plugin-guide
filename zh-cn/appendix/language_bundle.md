@@ -68,10 +68,10 @@
 |`shared.edit`|`编辑`|
 |`shared.choose`|`选择`|
 |`shared.toggle`|`切换`|
-|`shared.pin`|`置顶`|
+|`shared.pin`|`固定`|
 |`shared.state`|`状态`|
 |`shared.keyword`|`关键字`|
-|`shared.unpin`|`取消置顶`|
+|`shared.unpin`|`取消固定`|
 |`shared.guide`|`指南`|
 |`shared.documentation`|`文档`|
 |`shared.execute`|`执行`|

@@ -147,8 +147,8 @@ logo: ./logos/logo.png
 homepage: https://example.com
 source-code: https://github.com/example/example
 compatible-version:
-  since-build: 567
-  until-build: 567
+  since-build: 600
+  until-build: 600
 owner:
   name: example
   email: service@example.com
