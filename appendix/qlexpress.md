@@ -12,6 +12,7 @@ import cn.hutool.core.collection;
 import cn.hutool.core.date;
 import cn.hutool.core.io;
 import cn.hutool.core.lang;
+import cn.hutool.core.net;
 import cn.hutool.core.swing;
 import cn.hutool.core.util;
 import cn.hutool.http;

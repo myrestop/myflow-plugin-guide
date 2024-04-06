@@ -6,7 +6,9 @@
 
 - `data class top.myrest.myflow.action.ActionFocusedData`包括了专注模式的一些信息。
 
-- `abstract class top.myrest.myflow.action.ActionKeywordResultWrapper<T>`可以用来包装真实的运算结果。
+- `interface ActionKeywordSourceResult<T>`可以用来包装真实的运算结果。
+
+- `abstract class top.myrest.myflow.action.ActionKeywordResultWrapper<T>: ActionKeywordSourceResult<T>`可以用来包装真实的运算结果。
 
 - `open class top.myrest.myflow.action.ActionKeywordSuggestionResult<T> : top.myrest.myflow.action.ActionKeywordResultWrapper<T>`包括真实的运算结果和建议文本。
 

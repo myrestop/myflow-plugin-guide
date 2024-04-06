@@ -6,7 +6,9 @@ Most of the useful utility classes, methods and fields you can find in here.
 
 - `data class top.myrest.myflow.action.ActionFocusedData` includes some info for focused mode.
 
-- `abstract class top.myrest.myflow.action.ActionKeywordResultWrapper<T>` can wrap the result.
+- `interface ActionKeywordSourceResult<T>` can wrap the result.
+
+- `abstract class top.myrest.myflow.action.ActionKeywordResultWrapper<T>: ActionKeywordSourceResult<T>` can wrap the result.
 
 - `open class top.myrest.myflow.action.ActionKeywordSuggestionResult<T> : top.myrest.myflow.action.ActionKeywordResultWrapper<T>` can include result and suggest text.
 

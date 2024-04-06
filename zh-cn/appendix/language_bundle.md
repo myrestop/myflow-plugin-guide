@@ -175,6 +175,7 @@
 |`shared.digest`|`摘要`|
 |`shared.save-as-file`|`保存为文件`|
 |`shared.localized-matching`|`本地化匹配`|
+|`shared.share`|`分享`|
 |`calculator.copy-double`|`复制两个精度的小数`|
 |`calculator.copy-int`|`复制整型`|
 |`calculator.copy-full`|`复制完整运算结果`|

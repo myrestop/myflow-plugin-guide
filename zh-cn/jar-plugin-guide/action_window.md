@@ -14,8 +14,8 @@ interface ActionWindowProvider {
     fun getWindowInitHeight(): Int
     fun getState(): ActionWindowState?
     fun getActiveKeywordPin(onlyActionWindow: Boolean): ActionKeywordPin
-    fun setAction(pin: ActionKeywordPin,action: String)
-    fun getAction(): String
+    fun setRawTextFieldValue(pin: ActionKeywordPin, textFieldValue: TextFieldValue)
+    fun getRawTextFieldValue(): TextFieldValue
     fun pinActionFuncPage(result: ActionFuncPageResult)
     fun pinActionKeyword(pin: ActionKeywordPin)
     fun pinOrOpenExist(pin: ActionKeywordPin): ActionKeywordPin
@@ -24,13 +24,20 @@ interface ActionWindowProvider {
     fun getActionResults(pin: ActionKeywordPin): List<ActionResult>
     fun hasFocus(): Boolean
     fun getWindow(pinId: String): MyWindow
+    fun getAction(): String = getRawTextFieldValue().text
     fun getSelectedActionResult(pin: ActionKeywordPin): ActionResult? {
         return getActionResults(pin).firstOrNull { it.selected }
     }
-    fun setAction(pin: ActionKeywordPin,action: String, sendEvent: Boolean) {
-        setAction(pin, action)
+    fun setAction(pin: ActionKeywordPin, action: String) {
+        setRawTextFieldValue(pin, TextFieldValue(action, TextRange(action.length)))
+    }
+    fun setAction(pin: ActionKeywordPin, action: String, sendEvent: Boolean) {
+        setRawTextFieldValue(pin, TextFieldValue(action, TextRange(action.length)), sendEvent)
+    }
+    fun setRawTextFieldValue(pin: ActionKeywordPin, textFieldValue: TextFieldValue, sendEvent: Boolean) {
+        setRawTextFieldValue(pin, textFieldValue)
         if (sendEvent) {
-            Composes.emitActionTextChangedEvent(pin, action)
+            Composes.emitActionTextChangedEvent(pin, textFieldValue.text)
         }
     }
     fun pinOrOpenExist(pluginId: String, result: ActionKeywordFuncPageContentResult): ActionFuncPageResult? {

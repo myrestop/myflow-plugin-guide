@@ -21,8 +21,8 @@ entry: ./{os}/commandline-demo-plugin
 customize-loader: commandline
 version: 1.0.0
 compatible-version:
-  since-build: 610
-  until-build: 610
+  since-build: 661
+  until-build: 661
 ```
 
 **In this implementation, we will pass a parameter to you via commandline which is a base64 encoded json string, so when you get the argument, first you should decode it to json string by base64, then use a json library you liked to parse it.**
@@ -40,8 +40,8 @@ entry: http://127.0.0.1:8080
 customize-loader: http
 version: 1.0.0
 compatible-version:
-  since-build: 610
-  until-build: 610
+  since-build: 661
+  until-build: 661
 ```
 
 **In this implementation, we will use http post method to request you with a json body, and we require your http interface to respond within 500 milliseconds.** 
@@ -58,8 +58,8 @@ name: Python Plugin
 customize-loader: python
 version: 1.0.0
 compatible-version:
-  since-build: 610
-  until-build: 610
+  since-build: 661
+  until-build: 661
 ```
 
 **In python implementation, it is essentially same as `commandline`, we will pass a parameter to you via commandline which is a base64 encoded json string.**
@@ -76,8 +76,8 @@ name: QLExpress Plugin
 customize-loader: qlexpress
 version: 1.0.0
 compatible-version:
-  since-build: 610
-  until-build: 610
+  since-build: 661
+  until-build: 661
 ```
 
 **In this implementation, the request json parameter we will put them into the context directly, you can use them as variables.** [Learn our qlexpress optimization](appendix/qlexpress.md#qlexpress) & [Learn QLExpress](https://github.com/alibaba/QLExpress)

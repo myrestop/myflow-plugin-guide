@@ -4,16 +4,17 @@
 
 ### ActionResultCallback
 
-| 字段                   | 类型                                                  | 说明                                                   | 示例                 |
-|----------------------|-----------------------------------------------------|------------------------------------------------------|--------------------|
-| icon                 | Object                                              | 在通用插件中，这是一个字符串，在Jar插件中，还可以是image，或painter            | "./logos/icon.png" |
-| label                | String                                              | 回调的标签                                                | "Copy"             |
-| result               | Object                                              | 真实的运算结果                                              |                    |
-| actionMethod         | Enum<[ActionMethod](#actionmethod)>                 | 回调执行的方法                                              | "COPY_RESULT"      |
-| actionCallback       | Object                                              | 自定义回调执行方式，设置这个值后我们会忽略`actionMethod`字段，在通用插件中，这是一个字符串 |                    |
-| sortOrder            | Enum<[SortOrder](#sortorder)>                       | 排序优先级                                                | "NONE"             |
-| actionWindowBehavior | Enum<[ActionWindowBehavior](#actionwindowbehavior)> | 回调被执行后工作窗口的处理方式                                      | "HIDE_IF_POSSIBLE" |
-| showNotify           | Boolean                                             | 是否显示通知                                               | true               |
+| 字段                   | 类型                                                                     | 说明                                                   | 示例                 |
+|----------------------|------------------------------------------------------------------------|------------------------------------------------------|--------------------|
+| icon                 | Object                                                                 | 在通用插件中，这是一个字符串，在Jar插件中，还可以是image，或painter            | "./logos/icon.png" |
+| label                | String                                                                 | 回调的标签                                                | "Copy"             |
+| result               | Object                                                                 | 真实的运算结果                                              |                    |
+| title                | List<[ActionResultTitle](appendix/action_result.md#actionresulttitle)> | 标题                                                   |                    |
+| actionMethod         | Enum<[ActionMethod](#actionmethod)>                                    | 回调执行的方法                                              | "COPY_RESULT"      |
+| actionCallback       | Object                                                                 | 自定义回调执行方式，设置这个值后我们会忽略`actionMethod`字段，在通用插件中，这是一个字符串 |                    |
+| sortOrder            | Enum<[SortOrder](#sortorder)>                                          | 排序优先级                                                | "NONE"             |
+| actionWindowBehavior | Enum<[ActionWindowBehavior](#actionwindowbehavior)>                    | 回调被执行后工作窗口的处理方式                                      | "HIDE_IF_POSSIBLE" |
+| showNotify           | Boolean                                                                | 是否显示通知                                               | true               |
 
 ### ActionMethod
 
@@ -56,6 +57,12 @@
     "icon": "./logos/icon.png",
     "label": "Copy",
     "result": "some text",
+    "title": [
+        {
+            "value": "菜单标题",
+            "type": "PLAIN_TITLE"
+        }  
+    ],
     "actionMethod": "COPY_RESULT",
     "sortOrder": "NONE",
     "actionWindowBehavior": "HIDE_IF_POSSIBLE",

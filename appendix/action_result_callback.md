@@ -4,16 +4,17 @@
 
 ### Action Result Callback
 
-| field                | type                                                  | explanation                                                                                                    | example            |
-|----------------------|-------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------|
-| icon                 | Object                                                | in general plugin, it is a string, in jar plugin, it can be image or painter                                   | "./logos/icon.png" |
-| label                | String                                                | the execution method description                                                                               | "Copy"             |
-| result               | Object                                                | the real computed result                                                                                       |                    |
-| actionMethod         | Enum<[ActionMethod](#action-method)>                  | the execution method                                                                                           | "COPY_RESULT"      |
-| actionCallback       | Object                                                | customize callback execution, set this value will ignore action method field, in general plugin, it's a string |                    |
-| sortOrder            | Enum<[SortOrder](#sort-order)>                        | sort priority in callback list                                                                                 | "NONE"             |
-| actionWindowBehavior | Enum<[ActionWindowBehavior](#action-window-behavior)> | how to handle action window after callback executed                                                            | "HIDE_IF_POSSIBLE" |
-| showNotify           | Boolean                                               | show notify after callback executed                                                                            | true               |
+| field                | type                                                                     | explanation                                                                                                    | example            |
+|----------------------|--------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------|
+| icon                 | Object                                                                   | in general plugin, it is a string, in jar plugin, it can be image or painter                                   | "./logos/icon.png" |
+| label                | String                                                                   | the execution method description                                                                               | "Copy"             |
+| result               | Object                                                                   | the real computed result                                                                                       |                    |
+| title                | List<[ActionResultTitle](appendix/action_result.md#action-result-title)> | the callback title                                                                                             |                    |
+| actionMethod         | Enum<[ActionMethod](#action-method)>                                     | the execution method                                                                                           | "COPY_RESULT"      |
+| actionCallback       | Object                                                                   | customize callback execution, set this value will ignore action method field, in general plugin, it's a string |                    |
+| sortOrder            | Enum<[SortOrder](#sort-order)>                                           | sort priority in callback list                                                                                 | "NONE"             |
+| actionWindowBehavior | Enum<[ActionWindowBehavior](#action-window-behavior)>                    | how to handle action window after callback executed                                                            | "HIDE_IF_POSSIBLE" |
+| showNotify           | Boolean                                                                  | show notify after callback executed                                                                            | true               |
 
 ### Action Method
 
@@ -56,6 +57,12 @@
     "icon": "./logos/icon.png",
     "label": "Copy",
     "result": "some text",
+    "title": [
+        {
+            "value": "Callback Title",
+            "type": "PLAIN_TITLE"
+        }
+    ],
     "actionMethod": "COPY_RESULT",
     "sortOrder": "NONE",
     "actionWindowBehavior": "HIDE_IF_POSSIBLE",
