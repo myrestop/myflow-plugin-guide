@@ -4,8 +4,8 @@ entry: http://127.0.0.1:8080
 customize-loader: http
 version: 1.0.0
 compatible-version:
-  since-build: 661
-  until-build: 661
+  since-build: 860
+  until-build: 860
 actions:
   - keywords:
       - httpemoji

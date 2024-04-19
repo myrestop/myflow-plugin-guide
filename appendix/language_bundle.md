@@ -176,6 +176,14 @@
 |`shared.save-as-file`|`Save As File`|
 |`shared.localized-matching`|`Localized Matching`|
 |`shared.share`|`Share`|
+|`shared.lan`|`LAN`|
+|`shared.transfer`|`Transfer`|
+|`shared.visit`|`Visit`|
+|`shared.service-not-available`|`Service Not Available`|
+|`shared.download`|`Download`|
+|`shared.allow`|`Allow`|
+|`shared.deny`|`Deny`|
+|`shared.refresh`|`Refresh`|
 |`calculator.copy-double`|`Copy Two Precised Double`|
 |`calculator.copy-int`|`Copy Integer Only`|
 |`calculator.copy-full`|`Copy Full Result`|

@@ -176,6 +176,14 @@
 |`shared.save-as-file`|`保存为文件`|
 |`shared.localized-matching`|`本地化匹配`|
 |`shared.share`|`分享`|
+|`shared.lan`|`局域网`|
+|`shared.transfer`|`传输`|
+|`shared.visit`|`访问`|
+|`shared.service-not-available`|`服务不可用`|
+|`shared.download`|`下载`|
+|`shared.allow`|`允许`|
+|`shared.deny`|`拒绝`|
+|`shared.refresh`|`刷新`|
 |`calculator.copy-double`|`复制两个精度的小数`|
 |`calculator.copy-int`|`复制整型`|
 |`calculator.copy-full`|`复制完整运算结果`|
