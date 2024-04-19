@@ -80,6 +80,7 @@
 | unsupportedPlatforms | List<Enum<[PlatformType](#platformtype)>> | 否  | 不支持的操作系统           |                    |
 | keywords             | List\<String\>                            | 是  | 关键字                | - "keyword"        |
 | handler              | String                                    | 是  | 处理器                |                    |
+| enableByDefault      | Boolean                                   | 否  | 是否默认启用，默认：true     | false              |
 
 ### NamedService
 
@@ -179,6 +180,7 @@ actions:
       - key1
       - key2
     handler: com.example.plugin.Handler
+    enable-by-default: true
 action-windows:
   - service: com.example.plugin.ActionWindow
     name-bundle-id: app-name

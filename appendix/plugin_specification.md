@@ -80,6 +80,7 @@
 | unsupportedPlatforms | List<Enum<[PlatformType](#platform-type)>> | no       | the action unsupported platforms                                                                |                    |
 | keywords             | List\<String\>                             | yes      | keywords of the action                                                                          | - "keyword"        |
 | handler              | String                                     | yes      | handler of the action                                                                           |                    |
+| enableByDefault      | Boolean                                    | no       | whether enabled by default, default: true                                                       | false              |
 
 ### Named Service
 
@@ -179,6 +180,7 @@ actions:
       - key1
       - key2
     handler: com.example.plugin.Handler
+    enable-by-default: true
 action-windows:
   - service: com.example.plugin.ActionWindow
     name-bundle-id: app-name
