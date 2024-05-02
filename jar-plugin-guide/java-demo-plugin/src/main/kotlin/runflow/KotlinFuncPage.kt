@@ -31,6 +31,7 @@ class KotlinFuncPage : ActionKeywordHandler {
                 result = getFuncPageResult(),
                 callbacks = singleCallback(
                     actionMethod = ActionMethod.GOTO_FUNC_PAGE,
+                    label = AppInfo.currLanguageBundle.shared.open,
                 ),
             )
         )

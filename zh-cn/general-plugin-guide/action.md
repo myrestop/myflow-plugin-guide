@@ -59,13 +59,17 @@
         "result": "😃😃😃",
         "callbacks": [
             {
+                "label": "a-language-bundle-id",
                 "actionCallback": "action callback"
             }
         ],
-        "executedCallback": "callback executed"
+        "executedCallback": "callback executed",
+        "shouldAssignBundle": true
     }
 ]
 ```
+
+> `shouldAssignBundle` 字段说明：表示需要对返回的内容用绑定的语言资源进行翻译。
 
 ## ActionCallback
 

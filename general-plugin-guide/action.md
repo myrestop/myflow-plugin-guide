@@ -59,13 +59,17 @@ Response example json:
         "result": "😃😃😃",
         "callbacks": [
             {
+                "label": "a-language-bundle-id",
                 "actionCallback": "action callback"
             }
         ],
-        "executedCallback": "callback executed"
+        "executedCallback": "callback executed",
+        "shouldAssignBundle": true
     }
 ]
 ```
+
+> Field `shouldAssignBundle` explanation: indicates that the returned content should be translated by the bound language resources.
 
 ## Action Callback
 

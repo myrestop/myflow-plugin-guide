@@ -6,6 +6,7 @@ import cn.hutool.core.util.StrUtil;
 import kotlin.Pair;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
+import top.myrest.myflow.AppInfo;
 import top.myrest.myflow.action.ActionParam;
 import top.myrest.myflow.action.ActionRequireArgHandler;
 import top.myrest.myflow.action.ActionResult;
@@ -50,7 +51,7 @@ public class JavaActionHandler extends ActionRequireArgHandler {
         int len = actionParam.getArgs().stream().mapToInt(e -> e.getStrValue().length()).sum();
         String result = StrUtil.repeat("😃", len);
         List<ActionResultTitle> title = Collections.singletonList(new ActionResultTitle(result, ActionTitleType.PLAIN_TITLE));
-        List<ActionResultCallback> callbacks = Collections.singletonList(new ActionResultCallback(null, "", null, ActionMethod.COPY_RESULT, null, SortOrder.NONE, ActionWindowBehavior.HIDE_IF_POSSIBLE, true));
+        List<ActionResultCallback> callbacks = Collections.singletonList(new ActionResultCallback(null, AppInfo.INSTANCE.getCurrLanguageBundle().getShared().getCopy(), null, Collections.emptyList(), ActionMethod.COPY_RESULT, null, SortOrder.NONE, ActionWindowBehavior.HIDE_IF_POSSIBLE, true));
         ActionResult actionResult = new ActionResult("java", "", 100, null, title, "", result, callbacks, null, null, null);
         return Collections.singletonList(actionResult);
     }

@@ -5,8 +5,8 @@ names:
 customize-loader: commandline
 version: 1.0.0
 compatible-version:
-  since-build: 860
-  until-build: 860
+  since-build: 955
+  until-build: 955
 owner:
   name: MyRest
 actions:

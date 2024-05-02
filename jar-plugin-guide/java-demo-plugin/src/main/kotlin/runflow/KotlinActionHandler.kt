@@ -85,6 +85,7 @@ class KotlinActionHandler : ActionRequireArgHandler() {
                 },
                 callbacks = singleCallback(
                     actionMethod = ActionMethod.COPY_RESULT,
+                    label = AppInfo.currLanguageBundle.shared.copy,
                 ),
             ),
         )

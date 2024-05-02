@@ -22,6 +22,8 @@ interface ActionWindowProvider {
     fun pinOrOpenExist(result: ActionFuncPageResult): ActionFuncPageResult
     fun getPinnedKeywords(onlyActionWindow: Boolean): List<ActionKeywordPin>
     fun getActionResults(pin: ActionKeywordPin): List<ActionResult>
+    fun pinActionResult(pin: ActionKeywordPin, result: ActionResult)
+    fun unpinActionResult(pin: ActionKeywordPin, result: ActionResult)
     fun hasFocus(): Boolean
     fun getWindow(pinId: String): MyWindow
     fun getAction(): String = getRawTextFieldValue().text

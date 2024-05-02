@@ -184,6 +184,10 @@
 |`shared.allow`|`Allow`|
 |`shared.deny`|`Deny`|
 |`shared.refresh`|`Refresh`|
+|`shared.changelog`|`Changelog`|
+|`shared.result`|`Result`|
+|`shared.back`|`Back`|
+|`shared.forward`|`Forward`|
 |`calculator.copy-double`|`Copy Two Precised Double`|
 |`calculator.copy-int`|`Copy Integer Only`|
 |`calculator.copy-full`|`Copy Full Result`|

@@ -184,6 +184,10 @@
 |`shared.allow`|`允许`|
 |`shared.deny`|`拒绝`|
 |`shared.refresh`|`刷新`|
+|`shared.changelog`|`更新日志`|
+|`shared.result`|`结果`|
+|`shared.back`|`后退`|
+|`shared.forward`|`前进`|
 |`calculator.copy-double`|`复制两个精度的小数`|
 |`calculator.copy-int`|`复制整型`|
 |`calculator.copy-full`|`复制完整运算结果`|

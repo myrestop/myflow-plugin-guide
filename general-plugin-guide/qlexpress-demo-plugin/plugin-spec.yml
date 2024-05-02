@@ -3,8 +3,8 @@ name: QLExpress Plugin
 customize-loader: qlexpress
 version: 1.0.0
 compatible-version:
-  since-build: 860
-  until-build: 860
+  since-build: 955
+  until-build: 955
 actions:
   - keywords:
       - qlemoji
