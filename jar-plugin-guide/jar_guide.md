@@ -29,8 +29,8 @@ entry: ./java-demo-plugin.jar
 customize-loader: default
 version: 1.0.0
 compatible-version:
-  since-build: 955
-  until-build: 955
+  since-build: 961
+  until-build: 961
 ```
 
 ## Adding MainTest Class For Developing And Testing

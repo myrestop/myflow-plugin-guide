@@ -148,8 +148,8 @@ logo: ./logos/logo.png
 homepage: https://example.com
 source-code: https://github.com/example/example
 compatible-version:
-  since-build: 955
-  until-build: 955
+  since-build: 961
+  until-build: 961
 owner:
   name: example
   email: service@example.com

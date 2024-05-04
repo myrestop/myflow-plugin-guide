@@ -19,7 +19,7 @@ repositories {
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
-val myflowVersion = "1.3.0"
+val myflowVersion = "1.3.1"
 
 var myflowDependency: Dependency? = null
 var jetbrainsComposeDependency: Dependency? = null
