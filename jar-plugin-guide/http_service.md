@@ -2,6 +2,8 @@
 
 To enable http service we use [**ktor**](https://ktor.io/docs/welcome.html), so if you want to expose http endpoint make sure you know ktor.
 
+### Start the HTTP service through configuration
+
 Writing a hello http service by creating a kotlin file named `KotlinHttpService.kt`, code like the following:
 
 [KotlinHttpService.kt](java-demo-plugin/src/main/kotlin/runflow/KotlinHttpService.kt ':include :type=code')
@@ -12,6 +14,20 @@ Config to `plugin-spec.yml`:
 http-modules:
   - runflow.KotlinHttpService.helloModule
 ```
+
+### Start hte HTTP service through programming
+
+```kotlin
+top.myrest.myflow.http.HttpServices.getHttpServerApplication()?.apply {
+    routing {
+        get("/hello") {
+            call.respondText("Hello!")
+        }
+    }
+}
+```
+
+### Last
 
 Restart app, open url `http://127.0.0.1:8177/hello` set the result.
 
